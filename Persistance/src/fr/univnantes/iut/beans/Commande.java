@@ -1,4 +1,4 @@
-package fr.univnante.iut.beans;
+package fr.univnantes.iut.beans;
 
 import java.util.Date;
 

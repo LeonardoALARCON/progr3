@@ -1,4 +1,4 @@
-package fr.univnante.iut.beans;
+package fr.univnantes.iut.beans;
 
 public class Adherent {
 	private String id;
