@@ -2,7 +2,7 @@ package fr.univnantes.iut.bean;
 
 public class Article {
 	//attributs
-	private int code;
+	private String code;
 	private String nom;
 	private double prix;
 	private int stock;
@@ -11,7 +11,7 @@ public class Article {
 	public Article() {
 	}
 	
-	public Article(int code, String nom, double prix, int stock) {
+	public Article(String code, String nom, double prix, int stock) {
 		super();
 		this.code = code;
 		this.nom = nom;
@@ -20,10 +20,10 @@ public class Article {
 	}
 	
 	//accesseurs
-	public int getCode() {
+	public String getCode() {
 		return code;
 	}
-	public void setCode(int code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 	public String getNom() {
