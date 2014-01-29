@@ -7,9 +7,10 @@
 		<th>Commande</th>
 		<th></th>
 		<th align='right'>
-			<%if (request.getSession().getAttribute("login") != null) {%>
-            <%=request.getSession().getAttribute("login")%>
-            <%}else%>Non authentifié
+			<c:if test="${empty sessionScope.login }">
+				Non authentifié
+			</c:if>
+			${sessionScope.login.nom}
 		</th>
 	</tr>
 </table>

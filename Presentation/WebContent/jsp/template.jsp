@@ -20,7 +20,7 @@
 		</tr>
 		<tr>
 			<td>
-				<!-- main page --> <jsp:include page="accueil.jsp" />
+				<!-- main page --> <jsp:include page="/jsp/${requestScope.page}.jsp"/>
 			</td>
 	</table>
 
