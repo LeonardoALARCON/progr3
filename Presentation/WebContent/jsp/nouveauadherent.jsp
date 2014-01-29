@@ -1,3 +1,5 @@
+
+<div id="formulaireAuthentification" class="center">
 <form name="formRegister" method="post">
 	<table>
 		<tr>
@@ -68,3 +70,4 @@
 		</tr>
 	</table>
 </form>
+</div>
