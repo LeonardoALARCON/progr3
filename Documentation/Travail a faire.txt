@@ -1,10 +1,10 @@
 Header -> Leo
 Login / Deconnexion -> Gildas
-Accueil -> Miguel
+--Accueil -> Miguel
 Articles -> Gildas
 Commande -> Leo
 Creation Compte -> Moi
-Base de donnes -> Miguel
+--Base de donnes -> Miguel
 CSS -> Gildas
 Servlet - Controleur -> Leo
 Diagramme Sequence/ Cas d'utilisation -> Miguel
