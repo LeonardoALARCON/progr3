@@ -14,7 +14,7 @@ On arrive sur cette page d’accueil après un login correct (mot de passe valid
 	<!-- jsp:include page="/jsp/header.jsp"/-->
 	<h2>Bienvenue sur le site des adhérants de l'association</h2>
 	<ul>
-		<li><a href="<%=getServletContext().getContextPath()%>/association/catalogue">
+		<li><a href="<%=getServletContext().getContextPath()%>/association/articles">
 			Consulter les articles disponibles</a></li>
 		<li><a href="<%=getServletContext().getContextPath()%>/association/commande">
 			Consulter votre commande</a></li>

@@ -3,7 +3,7 @@
 <table border="1">
 	<tr>
 		<th><a href="<%=getServletContext().getContextPath()%>/association/accueil">Accueil</a></th>
-		<th><a href="<%=getServletContext().getContextPath()%>/association/catalogue">Articles</a></th>
+		<th><a href="<%=getServletContext().getContextPath()%>/association/articles">Articles</a></th>
 		<th><a href="<%=getServletContext().getContextPath()%>/association/commande">Commande</a></th>
 		<th></th>
 		<th align='right'>
