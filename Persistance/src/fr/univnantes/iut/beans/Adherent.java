@@ -2,7 +2,7 @@ package fr.univnantes.iut.beans;
 
 public class Adherent {
 	private String id;
-	private String motPase;
+	private String motPasse;
 	private String nom;
 	private String prenom;
 	private String adresse;
@@ -23,11 +23,11 @@ public class Adherent {
 	}
 
 	public String getMotPase() {
-		return motPase;
+		return motPasse;
 	}
 
 	public void setMotPase(String motPase) {
-		this.motPase = motPase;
+		this.motPasse = motPase;
 	}
 
 	public String getNom() {
