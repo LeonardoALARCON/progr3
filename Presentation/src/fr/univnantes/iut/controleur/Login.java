@@ -39,8 +39,7 @@ public class Login extends HttpServlet {
 		// chercher dans la BdD si les donnes sont corrects.
 		request.getSession().setAttribute("login", "UserTest");
 		request.setAttribute("page", "accueil");
-		getServletContext().getNamedDispatcher("template").forward(request,
-				response);
+		response.sendRedirect(request.getContextPath() + "/association/");
 
 	}
 
