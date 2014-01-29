@@ -1,6 +1,20 @@
-<<<<<<< HEAD
+
+div{
+	padding:10px;
+	box-shadow: 0px 0px 18px 20px rgba(20, 20, 20, 0.84);
+    -moz-box-shadow: 0px 0px 18px 20px rgba(20, 20, 20, 0.84);
+    -webkit-box-shadow: 0px 0px 18px 20px rgba(20, 20, 20, 0.84);
+    border-radius:20px;
+}
 body{
 	background-color:#160700;
+}
+
+#authentification{
+    margin-top:25px;
+    background-color:#d9d9d9;
+    width:800px;
+    height:200px;  
 }
 
 #corp{
@@ -28,8 +42,4 @@ body{
 
 div.center{
 	margin: 0 auto;
-=======
-body{
-	background-color:#00FFFF;
->>>>>>> 5b21113db36c68d9072a47358105913522e8679f
 }

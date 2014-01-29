@@ -3,11 +3,11 @@
 	<table border="1" id="menu">
 		<tr>
 			<th><a
-				href="<%=getServletContext().getContextPath()%>/association/accueil">Accueil</a></th>
+				href="<${pageContext.servletContext.contextPath}/association/accueil">Accueil</a></th>
 			<th><a
-				href="<%=getServletContext().getContextPath()%>/association/articles">Articles</a></th>
+				href="${pageContext.servletContext.contextPath}/association/articles">Articles</a></th>
 			<th><a
-				href="<%=getServletContext().getContextPath()%>/association/commande">Commande</a></th>
+				href="${pageContext.servletContext.contextPath}/association/commande">Commande</a></th>
 			<th width="100%"></th>
 			<th align="right" width="200px"><c:if test="${empty sessionScope.login }">
 				Non authentifié
