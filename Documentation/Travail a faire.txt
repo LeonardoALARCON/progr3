@@ -16,11 +16,11 @@ Diagramme de classe a la fin
 
 Pages:
 
-Header: /jsp/header.jsp
-Accueil: /jsp/accueil.jsp
-Articles: /jsp/articles.jsp
-Commande: /jsp/commande.jsp
-Creation Compte:  /jsp/nouceauadherent.jsp
+Header: /jsp/header.jsp  
+Accueil: /jsp/accueil.jsp                     Route: /accueil
+Articles: /jsp/articles.jsp                   Route: /articles
+Commande: /jsp/commande.jsp                   Route: /commande
+Creation Compte:  /jsp/nouveauadherent.jsp    Route: /nouveau
 
 Css:
 /css/*
