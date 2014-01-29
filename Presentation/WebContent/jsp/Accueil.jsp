@@ -10,7 +10,7 @@ On arrive sur cette page d’accueil après un login correct (mot de passe valid
 <title>Accueil</title>
 </head>
 <body>
-	<!-- jsp:include page="/header.jsp"/-->
+	<!-- jsp:include page="/jsp/header.jsp"/-->
 	<h2>Bienvenue sur le site des adhérants de l'association</h2>
 	<ul>
 		<li><a href="<%=getServletContext().getContextPath()%>/articles">
