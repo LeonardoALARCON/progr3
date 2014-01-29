@@ -5,28 +5,32 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css'
-    href="<%=getServletContext().getContextPath()%>/css/style.css" />
+	href="<%=getServletContext().getContextPath()%>/css/style.css" />
 <title>Template</title>
 </head>
 <body>
-	<table>
-		<!--  si ! Session alors inclure la page de login sinon inclure le reste -->
-		<!-- jsp:include page="/jsp/login.jsp"/-->
-		<!--  else -->
+	<div id="corp" class="center">
+		<table>
+			<!--  si ! Session alors inclure la page de login sinon inclure le reste -->
+			<!-- jsp:include page="/jsp/login.jsp"/-->
+			<!--  else -->
 
-		<tr>
-			<td><jsp:include page="/jsp/header.jsp" /></td>
-			<td>
-				<!-- authentification.jsp -->
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<!-- main page --> <jsp:include page="/jsp/${requestScope.page}.jsp"/>
-				
-			</td>
-	</table>
-
+			<tr>
+				<td><jsp:include page="/jsp/header.jsp" /></td>
+				<td>
+					<!-- authentification.jsp -->
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="center">
+						<!-- main page -->
+						<jsp:include page="/jsp/${requestScope.page}.jsp" />
+					</div>
+				</td>
+		</table>
+	</div>
+	<div id="footer" class="center"></div>
 
 </body>
 </html>
