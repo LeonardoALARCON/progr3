@@ -13,7 +13,7 @@
 		<!--  else -->
 
 		<tr>
-			<td><jsp:include page="header.jsp"></td>
+			<td><jsp:include page="header.jsp" /></td>
 			<td>
 				<!-- authentification.jsp -->
 			</td>

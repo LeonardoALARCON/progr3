@@ -4,11 +4,11 @@
 	<table>
 		<tr>
 			<td>Identifiant:</td>
-			<td><input type="text" name="login"></td>
+			<td><input type="text" name="login" size="10"></td>
 		</tr>
 		<tr>
 			<td>Mot de passe:</td>
-			<td><input type="password" name="psswd"></td>
+			<td><input type="password" name="psswd" size="10"></td>
 		</tr>
 		<tr>
 			<td colspan="2" align="center"><input type="submit"
@@ -16,7 +16,7 @@
 		</tr>
 		<tr>
 			<td colspan="2" align="center">Pas encore enregistrer? <a
-				href="/creerUnCompte">Creer un compte!</a></td>
+				href="/creerUnCompte"><b>Creer un compte!</b></a></td>
 		</tr>
 	</table>
 </form>
