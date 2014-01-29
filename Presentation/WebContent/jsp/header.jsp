@@ -3,7 +3,7 @@
 	<table border="1" id="menu">
 		<tr>
 			<th><a
-				href="<${pageContext.servletContext.contextPath}/association/accueil">Accueil</a></th>
+				href="${pageContext.servletContext.contextPath}/association/accueil">Accueil</a></th>
 			<th><a
 				href="${pageContext.servletContext.contextPath}/association/articles">Articles</a></th>
 			<th><a
