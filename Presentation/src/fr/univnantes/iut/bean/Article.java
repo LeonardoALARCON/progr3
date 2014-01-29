@@ -1,5 +1,10 @@
 package fr.univnantes.iut.bean;
-
+/**
+ * Bean Article, decrit chaque articles. On pourrai rajouter un champ photo, qui ciblerai 
+ * l'image d'un article.
+ * @author Gildas
+ *
+ */
 public class Article {
 	//attributs
 	private String code;
