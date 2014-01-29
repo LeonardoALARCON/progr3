@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>presentation</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -29,4 +31,16 @@
     <servlet-name>Controleur</servlet-name>
     <url-pattern>/association/*</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>login</display-name>
+    <servlet-name>login</servlet-name>
+    <jsp-file>/jsp/login.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>loginControleur</display-name>
+    <servlet-name>loginControleur</servlet-name>
+    <servlet-class>fr.univnantes.iut.controleur.Login</servlet-class>
+  </servlet>
 </web-app>
