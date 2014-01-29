@@ -15,4 +15,4 @@
 		</tr>
 	</tbody>
 </table>
-<a href="/annuler">Annuler la commande</a>
+<a href="${pageContext.servletContext.contextPath}/association/annulerCommande">Annuler la commande</a>
