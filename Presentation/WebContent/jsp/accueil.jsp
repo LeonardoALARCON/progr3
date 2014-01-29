@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -18,5 +19,3 @@ On arrive sur cette page d’accueil après un login correct (mot de passe valid
 		<li><a href="<%=getServletContext().getContextPath()%>/commande">
 			Consulter votre commande</a></li>
 	</ul>
-</body>
-</html>
