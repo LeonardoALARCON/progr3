@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel='stylesheet' type='text/css'
+    href="<%=getServletContext().getContextPath()%>/css/style.css" />
 <title>Template</title>
 </head>
 <body>
@@ -13,7 +15,7 @@
 		<!--  else -->
 
 		<tr>
-			<td><jsp:include page="header.jsp" /></td>
+			<td><jsp:include page="/jsp/header.jsp" /></td>
 			<td>
 				<!-- authentification.jsp -->
 			</td>
@@ -21,6 +23,7 @@
 		<tr>
 			<td>
 				<!-- main page --> <jsp:include page="/jsp/${requestScope.page}.jsp"/>
+				
 			</td>
 	</table>
 

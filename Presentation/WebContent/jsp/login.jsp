@@ -15,11 +15,8 @@
 		</tr>
 		<tr>
 			<td colspan="2" align="center">Pas encore enregistrer? <a
-<<<<<<< HEAD
-				href="/creerUnCompte"><b>Creer un compte!</b></a></td>
-=======
+
 				href="/nouveauadherent">Creer un compte!</a></td>
->>>>>>> b5897f1c719c39fe627c67186aa74d94c492fa58
 		</tr>
 	</table>
 </form>
