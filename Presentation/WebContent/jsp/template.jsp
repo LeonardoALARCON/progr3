@@ -4,28 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel='stylesheet' type='text/css'
-	href="${pageContext.servletContext.contextPath}/css/style.css" />
+<link rel='stylesheet' type='text/css' href="${pageContext.servletContext.contextPath}/css/style.css" />
 <title>Template</title>
 </head>
 <body>
 	<div id="corp" class="center">
 		<table>
-			<!--  si ! Session alors inclure la page de login sinon inclure le reste -->
-			<!-- jsp:include page="/jsp/login.jsp"/-->
-			<!--  else -->
-
 			<tr>
-				<td><jsp:include page="/jsp/header.jsp" /></td>
-				<td>
-					<!-- authentification.jsp -->
-				</td>
+				<td><jsp:include page='/jsp/header.jsp' /></td>
 			</tr>
 			<tr>
 				<td>
 					<div class="center">
 						<!-- main page -->
-						<jsp:include page="/jsp/${requestScope.page}.jsp" />
+						<jsp:include page='/jsp/${requestScope.page}.jsp' />
 					</div>
 				</td>
 		</table>

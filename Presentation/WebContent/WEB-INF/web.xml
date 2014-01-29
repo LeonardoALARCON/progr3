@@ -29,7 +29,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>Controleur</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>Controleur</servlet-name>
@@ -47,4 +47,11 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
     <servlet-name>loginControleur</servlet-name>
     <servlet-class>fr.univnantes.iut.controleur.Login</servlet-class>
   </servlet>
+  <servlet>
+    <description></description>
+    <display-name>nouveauadherent</display-name>
+    <servlet-name>nouveauadherent</servlet-name>
+    <jsp-file>/jsp/nouveauadherent.jsp</jsp-file>
+  </servlet>
+  
 </web-app>
