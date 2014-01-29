@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel='stylesheet' type='text/css'  href="${pageContext.servletContext.contextPath}/css/style.css" />
+<link rel='stylesheet' type='text/css' href="${pageContext.servletContext.contextPath}/css/style.css" />
 <title>Template</title>
 </head>
 <body>
 <h3>Login</h3>
+<div id="authentification" class="center">
 <form name="formLogin" method="post">
 	<table>
 		<tr>
@@ -24,10 +25,11 @@
 				name="envoyer" value="Envoyer"></td>
 		</tr>
 		<tr>
-			<td colspan="2" align="center">Pas encore enregistrer? 
+			<td colspan="2" align="center">Pas encore enregistré? 
 			<a href="${pageContext.servletContext.contextPath}/association/nouveauadherent">Creer un compte!</a></td>
 		</tr>
 	</table>
 </form>
+</div>
 </body>
 </html>
