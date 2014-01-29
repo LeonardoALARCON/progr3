@@ -16,7 +16,7 @@
 		<tr>
 			<td colspan="2" align="center">Pas encore enregistrer? <a
 
-				href="/nouveauadherent">Creer un compte!</a></td>
+				href="/association/nouveauadherent">Creer un compte!</a></td>
 		</tr>
 	</table>
 </form>
