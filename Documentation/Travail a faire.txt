@@ -1,0 +1,15 @@
+Header -> Leo
+Login / Deconnexion -> Gildas
+Accueil -> Miguel
+Articles -> Gildas
+Commande -> Leo
+Creation Compte -> Moi
+Base de donnes -> Miguel
+CSS -> Gildas
+Servlet - Controleur -> Leo
+Diagramme Sequence/ Cas d'utilisation -> Miguel
+
+General
+Utiliser Bean Validation
+Javadoc/Commentaires en français
+Diagramme de classe a la fin
