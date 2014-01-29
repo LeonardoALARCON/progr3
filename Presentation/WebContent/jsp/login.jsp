@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login</title>
 <link rel='stylesheet' type='text/css' href="${pageContext.servletContext.contextPath}/css/style.css" />
-<title>Template</title>
 </head>
 <body>
 <h3>Login</h3>

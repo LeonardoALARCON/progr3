@@ -26,7 +26,7 @@ public class Controleur extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		process(request, response);
+		processus(request, response);
 	}
 
 	/**
@@ -35,42 +35,42 @@ public class Controleur extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		process(request, response);
+		processus(request, response);
 	}
 
-	/**
-	 * Method pour gerer le processus d'acces
-	 * 
-	 * @param request
-	 * @param response
-	 * @throws IOException
-	 * @throws ServletException
-	 */
-	private void process(HttpServletRequest request,
+	private void processus(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getPathInfo());
-		System.out.println(request.getParameter("login"));
+		System.out.println("Path info: " + request.getPathInfo());
+		System.out.println("Param Login: " + request.getParameter("login"));
 		String dispatcher = "";
 		if("/nouveauadherent".equals(request.getPathInfo())){
-			dispatcher = "nouveauadherent";
-		}else if (request.getSession().getAttribute("user") == null) {
+			dispatcher = "nouveauadherentcontroleur";
+		}
+		else if (request.getSession().getAttribute("login") == null) {
 			if(request.getParameter("login") != null){
 				dispatcher = "loginControleur";
 			}else{
 				dispatcher = "login";
 			}
-		} else {
+		}
+		else if(request.getParameter("logout") != null){
+			request.getSession().removeAttribute("login");
+			dispatcher = "login";
+		}
+		else{
 			if (request.getPathInfo() != null) {
-
 				request.setAttribute("page",
 						request.getPathInfo().replace("/", ""));
-			} else {
+			}
+			else {
 				request.setAttribute("page", "accueil");
 			}
 			dispatcher = "template";
 		}
+		
 		getServletContext().getNamedDispatcher(dispatcher).forward(request,
 				response);
+		
 	}
 
 }

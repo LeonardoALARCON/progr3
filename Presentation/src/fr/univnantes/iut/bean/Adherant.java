@@ -1,5 +1,10 @@
 package fr.univnantes.iut.bean;
-
+/**
+ * Bean adherent decrit une personne.
+ * Les champs sont du même nom que ceux de la base de donnée.
+ * @author Gildas
+ *
+ */
 public class Adherant {
 	
 	private int id;
