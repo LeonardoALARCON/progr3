@@ -1,4 +1,13 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login</title>
+<link rel='stylesheet' type='text/css' href="${pageContext.servletContext.contextPath}/css/style.css" />
+</head>
+<body>
 <div id="formulaireAuthentification" class="center">
 <form name="formRegister" method="post">
 	<table>
@@ -27,7 +36,7 @@
       </td>
     </tr>
     <tr>
-      <td>Prénom:</td>
+      <td>PrÃ©nom:</td>
       <td>
        <input type="text" name="prenom" size="20" maxlength="20" required><small>*</small>
       </td>
@@ -55,7 +64,7 @@
       <td>
        <select name="pays">
 	        <option value="">Selectionez un pays</option>
-	        <option value="États Unis">États Unis</option>
+	        <option value="Ã‰tats Unis">Ã‰tats Unis</option>
 	        <option value="France">France</option>
 	        <option value="Mexique">Mexique</option>
        </select>
@@ -71,3 +80,5 @@
 	</table>
 </form>
 </div>
+</body>
+</html>
