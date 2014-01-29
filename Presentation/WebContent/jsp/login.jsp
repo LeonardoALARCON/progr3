@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel='stylesheet' type='text/css'
-    href="<%=getServletContext().getContextPath()%>/css/style.css" />
+    href="${pageContext.servletContext.contextPath}/css/style.css" />
 <title>Template</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
 		<tr>
 			<td colspan="2" align="center">Pas encore enregistrer? <a
 
-				href="/association/nouveauadherent">Creer un compte!</a></td>
+				href="${pageContext.servletContext.contextPath}/association/nouveauadherent">Creer un compte!</a></td>
 		</tr>
 	</table>
 </form>

@@ -50,13 +50,14 @@ public class Controleur extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		System.out.println(request.getPathInfo());
 		System.out.println(request.getParameter("login"));
-		if (request.getSession().getAttribute("user") == null) {
+		String dispatcher = "";
+		if("/nouveauadherent".equals(request.getPathInfo())){
+			dispatcher = "nouveauadherent";
+		}else if (request.getSession().getAttribute("user") == null) {
 			if(request.getParameter("login") != null){
-				getServletContext().getNamedDispatcher("loginControleur").forward(request,
-						response);
+				dispatcher = "loginControleur";
 			}else{
-			getServletContext().getNamedDispatcher("login").forward(request,
-					response);
+				dispatcher = "login";
 			}
 		} else {
 			if (request.getPathInfo() != null) {
@@ -66,9 +67,10 @@ public class Controleur extends HttpServlet {
 			} else {
 				request.setAttribute("page", "accueil");
 			}
-			getServletContext().getNamedDispatcher("template").forward(request,
-					response);
+			dispatcher = "template";
 		}
+		getServletContext().getNamedDispatcher(dispatcher).forward(request,
+				response);
 	}
 
 }
