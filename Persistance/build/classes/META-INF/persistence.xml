@@ -12,7 +12,7 @@
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
 			<!--  Configurer ici la base -->
-			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/persistance" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/assoc" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="admin" />
 		</properties>
