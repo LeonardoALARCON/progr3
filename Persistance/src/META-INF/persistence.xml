@@ -5,6 +5,10 @@
 	<persistence-unit name="Persistance" transaction-type="RESOURCE_LOCAL">
 	
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    
+        <class>fr.univnantes.iut.beans.Adherent</class>
+        <class>fr.univnantes.iut.beans.Article</class>
+        <class>fr.univnantes.iut.beans.Commande</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver" />
 			<!--  Configurer ici la base -->
