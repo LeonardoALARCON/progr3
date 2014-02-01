@@ -1,13 +1,29 @@
 package fr.univnantes.iut.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ADHERANT", schema="ROOT")
 public class Adherent {
+	@Id
+	@Column(name="ID_ADH")
 	private String id;
+	@Column(name="MDP")
 	private String motPasse;
+	@Column(name="NOM")
 	private String nom;
+	@Column(name="PRENOM")
 	private String prenom;
+	@Column(name="ADRESSE")
 	private String adresse;
+	@Column(name="CP")
 	private String codePostal;
+	@Column(name="VILLE")
 	private String ville;
+	@Column(name="PAYS")
 	private String pays;
 	
 	public Adherent(){

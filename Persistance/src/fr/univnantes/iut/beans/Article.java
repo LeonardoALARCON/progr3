@@ -1,10 +1,21 @@
 package fr.univnantes.iut.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="CATALOGUE", schema="ROOT")
 public class Article {
-	
+	@Id
+	@Column(name="CODE")
 	private int code;
+	@Column(name="NOM")
 	private String nom;
+	@Column(name="PRIX")
 	private double prix;
+	@Column(name="STOCK")
 	private int stock;
 	
 	public Article(){
