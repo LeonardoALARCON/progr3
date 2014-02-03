@@ -26,11 +26,7 @@ public class Controleur extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-<<<<<<< HEAD
 		process(request, response);
-=======
-		processus(request, response);
->>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	}
 
 	/**
@@ -39,42 +35,6 @@ public class Controleur extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-<<<<<<< HEAD
-		process(request, response);
-	}
-
-	/**
-	 * Method pour gerer le processus d'acces
-	 * 
-	 * @param request
-	 * @param response
-	 * @throws IOException
-	 * @throws ServletException
-	 */
-	private void process(HttpServletRequest request,
-			HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getPathInfo());
-		System.out.println(request.getParameter("login"));
-		if (request.getSession().getAttribute("user") == null) {
-			if(request.getParameter("login") != null){
-				getServletContext().getNamedDispatcher("loginControleur").forward(request,
-						response);
-			}else{
-			getServletContext().getNamedDispatcher("login").forward(request,
-					response);
-			}
-		} else {
-			if (request.getPathInfo() != null) {
-
-				request.setAttribute("page",
-						request.getPathInfo().replace("/", ""));
-			} else {
-				request.setAttribute("page", "accueil");
-			}
-			getServletContext().getNamedDispatcher("template").forward(request,
-					response);
-		}
-=======
 		processus(request, response);
 	}
 
@@ -83,38 +43,32 @@ public class Controleur extends HttpServlet {
 		System.out.println("Path info: " + request.getPathInfo());
 		System.out.println("Param Login: " + request.getParameter("login"));
 		String dispatcher = "";
-		if("/css/style.css".equals(request.getPathInfo())){
-			request.getRequestDispatcher("/css/style.css").forward(request, response);
-		}
-		else if("/nouveauadherent".equals(request.getPathInfo())){
+		if ("/css/style.css".equals(request.getPathInfo())) {
+			request.getRequestDispatcher("/css/style.css").forward(request,
+					response);
+		} else if ("/nouveauadherent".equals(request.getPathInfo())) {
 			dispatcher = "nouveauadherentcontroleur";
-		}
-		else if (request.getSession().getAttribute("login") == null) {
-			if(request.getParameter("login") != null){
+		} else if (request.getSession().getAttribute("login") == null) {
+			if (request.getParameter("login") != null) {
 				dispatcher = "loginControleur";
-			}else{
+			} else {
 				dispatcher = "login";
 			}
-		}
-		else if(request.getParameter("logout") != null){
+		} else if (request.getParameter("logout") != null) {
 			request.getSession().removeAttribute("login");
 			dispatcher = "login";
-		}
-		else{
+		} else {
 			if (request.getPathInfo() != null) {
 				request.setAttribute("page",
 						request.getPathInfo().replace("/", ""));
-			}
-			else {
+			} else {
 				request.setAttribute("page", "accueil");
 			}
 			dispatcher = "template";
 		}
-		
+
 		getServletContext().getNamedDispatcher(dispatcher).forward(request,
 				response);
-		
->>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	}
 
 }

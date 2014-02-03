@@ -7,7 +7,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import entities.Author;
 import fr.univnantes.iut.beans.Adherent;
 
 public class AdherentService {
