@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import entities.Author;
 import fr.univnantes.iut.beans.Adherent;
 
 public class AdherentService {
@@ -20,7 +21,13 @@ public class AdherentService {
 	}
 
 	public void create(Adherent a) {
-		em.persist(a);
+		Adherent ad = em.find(Author.class, a.getId());
+		em.getTransaction().begin();
+		em.persist(ad);
+		if (em.contains(ad)){
+			System.out.println("Adhérant : "+ad+" ajouté");
+		}
+		em.getTransaction().commit();
 	}
 
 }
