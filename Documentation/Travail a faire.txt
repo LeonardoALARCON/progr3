@@ -34,4 +34,5 @@ tema: titulo, imagenes, desarrollo del tema (solo temas y subtemas)
 
 notas: poner el titulo del tema y el plano de temas, numerar paginas, terminar por preguntas y respuestas
 
-ajouter le raport sonar
+ajouter le raport sonar et faire des tests
+
