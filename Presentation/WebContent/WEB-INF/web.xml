@@ -22,7 +22,10 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
     <servlet-name>Controleur</servlet-name>
     <url-pattern>/association/</url-pattern>
   </servlet-mapping>
+<<<<<<< HEAD
+=======
  
+>>>>>>> 0eb4ae9cfb70147c355cc0f41e084d3387e7bf74
   <servlet-mapping>
     <servlet-name>Controleur</servlet-name>
     <url-pattern>/association/*</url-pattern>

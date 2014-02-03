@@ -8,8 +8,8 @@ import javax.persistence.Persistence;
 
 import org.junit.Test;
 
-import services.AdherantService;
-import entities.Adherant;
+import service.AdherantService;
+import entitie.Adherant;
 
 public class TEST {
 
@@ -25,16 +25,16 @@ public class TEST {
 				AdherantService as = new AdherantService(emf, em);
 
 				Adherent ad = new Adherent();
-				ad.setId("");
-				ad.setMotPasse("");
-				ad.setnom("");
-				ad.setPrenom("");
-				ad.setAdresse("");
-				ad.setCodePostal("");
-				ad.setVille("");
-				ad.setPays("");
-				
-				as.create(a);
+				ad.setId("coq_sportif38");
+				ad.setMotPasse("im_a_princess");
+				ad.setnom("GILDAS");
+				ad.setPrenom("LE COQ");
+				ad.setAdresse("15, PONT SOUR L'ERDRE");
+				ad.setCodePostal("44000");
+				ad.setVille("NANTES");
+				ad.setPays("FRANCE");
+
+				as.create(ad);
 				
 				as.list(ad.getId());
 								

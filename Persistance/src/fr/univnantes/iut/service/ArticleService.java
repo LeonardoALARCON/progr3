@@ -1,5 +1,4 @@
 package fr.univnantes.iut.service;
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -7,49 +6,48 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import entities.Author;
-import fr.univnantes.iut.beans.Adherent;
+import fr.univnantes.iut.beans.Article;
 
-public class AdherentService {
+public class ArticleService {
 	private EntityManagerFactory emf = null;
 	private EntityManager em = null;
 	private Query query;
 
-	public AdherentService() {
+	public ArticleService() {
 		emf = Persistence.createEntityManagerFactory("jpa-assoc");
 		System.out.println("EntityManager ready");
 		em = emf.createEntityManager();
 		System.out.println("EntityManager status : open ? " + em.isOpen());
 	}
 
-	public Adherent find(int id) {
-		return em.find(Adherent.class, id);
+	public Article find(int id) {
+		return em.find(Article.class, id);
 	}
 
 	public void delete(int id) {
-		Adherent adherent = em.find(Adherent.class, id);
-		if (adherent != null) {
+		Article article = em.find(Article.class, id);
+		if (article != null) {
 			em.getTransaction().begin();
-			em.remove(adherent);
+			em.remove(article);
 			em.getTransaction().commit();
 		}
 	}
 
-	public void delete(Adherent adherent) {
+	public void delete(Article article) {
 		em.getTransaction().begin();
-		em.remove(adherent);
+		em.remove(article);
 		em.getTransaction().commit();
 	}
 
-	public void create(Adherent adherent) {
+	public void create(Article article) {
 		em.getTransaction().begin();
-		em.persist(adherent);
+		em.persist(article);
 		em.getTransaction().commit();
 	}
 
-	public void update(Adherent adherent) {
+	public void update(Article article) {
 		em.getTransaction().begin();
-		em.merge(adherent);
+		em.merge(article);
 		em.getTransaction().commit();
 	}
 
@@ -61,10 +59,11 @@ public class AdherentService {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<Adherent> listAll() {
-		query = em.createNamedQuery("Adherent.findAll");
-		List<Adherent> adherents = query.getResultList();
-		return adherents;
+	public List<Article> listAll() {
+		query = em.createNamedQuery("Article.findAll");
+		List<Article> articles = query.getResultList();
+		return articles;
+
 	}
 
 }

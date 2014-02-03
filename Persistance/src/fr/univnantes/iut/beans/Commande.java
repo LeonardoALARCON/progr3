@@ -2,12 +2,11 @@ package fr.univnantes.iut.beans;
 
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
+@NamedQueries({ @NamedQuery(name = "Commande.findAll", 
+query = "SELECT c FROM Commande c") })
 @Table(name="COMMANDE", schema="ROOT")
 public class Commande {
 	@Id

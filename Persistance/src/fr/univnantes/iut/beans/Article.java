@@ -1,11 +1,10 @@
 package fr.univnantes.iut.beans;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
+@NamedQueries({ @NamedQuery(name = "Article.findAll", 
+query = "SELECT a FROM Article a") })
 @Table(name="CATALOGUE", schema="ROOT")
 public class Article {
 	@Id

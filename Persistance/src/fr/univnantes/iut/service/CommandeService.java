@@ -1,5 +1,4 @@
 package fr.univnantes.iut.service;
-
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -7,49 +6,48 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import entities.Author;
-import fr.univnantes.iut.beans.Adherent;
+import fr.univnantes.iut.beans.Commande;
 
-public class AdherentService {
+public class CommandeService {
 	private EntityManagerFactory emf = null;
 	private EntityManager em = null;
 	private Query query;
 
-	public AdherentService() {
+	public CommandeService() {
 		emf = Persistence.createEntityManagerFactory("jpa-assoc");
 		System.out.println("EntityManager ready");
 		em = emf.createEntityManager();
 		System.out.println("EntityManager status : open ? " + em.isOpen());
 	}
 
-	public Adherent find(int id) {
-		return em.find(Adherent.class, id);
+	public Commande find(int id) {
+		return em.find(Commande.class, id);
 	}
 
 	public void delete(int id) {
-		Adherent adherent = em.find(Adherent.class, id);
-		if (adherent != null) {
+		Commande commande = em.find(Commande.class, id);
+		if (commande != null) {
 			em.getTransaction().begin();
-			em.remove(adherent);
+			em.remove(commande);
 			em.getTransaction().commit();
 		}
 	}
 
-	public void delete(Adherent adherent) {
+	public void delete(Commande commande) {
 		em.getTransaction().begin();
-		em.remove(adherent);
+		em.remove(commande);
 		em.getTransaction().commit();
 	}
 
-	public void create(Adherent adherent) {
+	public void create(Commande commande) {
 		em.getTransaction().begin();
-		em.persist(adherent);
+		em.persist(commande);
 		em.getTransaction().commit();
 	}
 
-	public void update(Adherent adherent) {
+	public void update(Commande commande) {
 		em.getTransaction().begin();
-		em.merge(adherent);
+		em.merge(commande);
 		em.getTransaction().commit();
 	}
 
@@ -61,10 +59,10 @@ public class AdherentService {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<Adherent> listAll() {
-		query = em.createNamedQuery("Adherent.findAll");
-		List<Adherent> adherents = query.getResultList();
-		return adherents;
-	}
+	public List<Commande> listAll() {
+		query = em.createNamedQuery("Commande.findAll");
+		List<Commande> commandes = query.getResultList();
+		return commandes;
 
+	}
 }
