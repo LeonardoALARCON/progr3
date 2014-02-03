@@ -95,5 +95,9 @@ ALTER TABLE assoc.COMMANDE ADD CONSTRAINT CODE FOREIGN KEY (CODE)
 	
 	
 	--INITIALISATION--
+<<<<<<< HEAD
 
 >>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
+=======
+insert into "ASSOC"."ADHERANT" ("ID_ADH", "MDP", "NOM", "PRENOM", "ADRESSE", "CP", "VILLE", "PAYS") values('1', '1234', 'lecoq', 'gildas', '2 rue des pommes', '44000', 'nantes', 'france');
+>>>>>>> c2729d34aacc5b7c92b6950c77bb6e80108dfc57
