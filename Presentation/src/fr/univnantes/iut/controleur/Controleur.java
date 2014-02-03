@@ -43,7 +43,10 @@ public class Controleur extends HttpServlet {
 		System.out.println("Path info: " + request.getPathInfo());
 		System.out.println("Param Login: " + request.getParameter("login"));
 		String dispatcher = "";
-		if("/nouveauadherent".equals(request.getPathInfo())){
+		if("/css/style.css".equals(request.getPathInfo())){
+			request.getRequestDispatcher("/css/style.css").forward(request, response);
+		}
+		else if("/nouveauadherent".equals(request.getPathInfo())){
 			dispatcher = "nouveauadherentcontroleur";
 		}
 		else if (request.getSession().getAttribute("login") == null) {
