@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+=======
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
   <display-name>presentation</display-name>
   <welcome-file-list>
     <welcome-file>/jsp/login.jsp</welcome-file>
@@ -37,6 +43,8 @@
     <servlet-name>loginControleur</servlet-name>
     <servlet-class>fr.univnantes.iut.controleur.Login</servlet-class>
   </servlet>
+<<<<<<< HEAD
+=======
   <servlet>
     <description></description>
     <display-name>nouveauadherentJSP</display-name>
@@ -50,4 +58,5 @@
     <servlet-class>fr.univnantes.iut.controleur.NouveauAdherentControleur</servlet-class>
   </servlet>
 
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 </web-app>

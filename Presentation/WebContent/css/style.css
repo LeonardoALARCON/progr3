@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+body{
+	background-color:#00FFFF;
+=======
 
 div{
 	padding:10px;
@@ -48,4 +52,5 @@ body{
 
 div.center{
 	margin: 0 auto;
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 }
