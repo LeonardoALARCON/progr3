@@ -1,4 +1,5 @@
 package fr.univnantes.iut.service;
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -65,4 +66,5 @@ public class AdherentService {
 		return adherents;
 
 	}
+
 }

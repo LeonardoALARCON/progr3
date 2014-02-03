@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+body{
+	background-color:#00FFFF;
+=======
 
 div{
 	padding:10px;
@@ -14,13 +18,13 @@ body{
     margin-top:25px;
     background-color:#d9d9d9;
     width:800px;
-    height:200px;  
+    height:100px;  
 }
 #formulaireAuthentification{
     margin-top:25px;
     background-color:#d9d9d9;
     width:800px;
-    height:1000px;  
+    height:300px;  
 }
 
 #corp{
@@ -48,4 +52,5 @@ body{
 
 div.center{
 	margin: 0 auto;
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 }
