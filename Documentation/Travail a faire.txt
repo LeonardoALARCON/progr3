@@ -1,9 +1,9 @@
-Header -> Leo
+--Header -> Leo
 Login / Deconnexion -> Gildas
 Accueil -> Miguel
 Articles -> Gildas
 Commande -> Leo
-Creation Compte -> Moi
+Creation Compte -> Leo
 Base de donnes -> Miguel
 CSS -> Gildas
 Servlet - Controleur -> Leo

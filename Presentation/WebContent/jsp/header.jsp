@@ -2,15 +2,15 @@
 
 <table border="1">
 	<tr>
-		<th>Accueil</th>
-		<th>Articles</th>
-		<th>Commande</th>
+		<th><a href="<%=getServletContext().getContextPath()%>/association/accueil">Accueil</a></th>
+		<th><a href="<%=getServletContext().getContextPath()%>/association/catalogue">Articles</a></th>
+		<th><a href="<%=getServletContext().getContextPath()%>/association/commande">Commande</a></th>
 		<th></th>
 		<th align='right'>
 			<c:if test="${empty sessionScope.login }">
 				Non authentifié
 			</c:if>
-			${sessionScope.login.nom}
+			${sessionScope.login}
 		</th>
 	</tr>
 </table>
