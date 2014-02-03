@@ -7,7 +7,7 @@ Creation Compte -> Moi
 --Base de donnes -> Miguel
 CSS -> Gildas
 Servlet - Controleur -> Leo
-Diagramme Sequence/ Cas d'utilisation -> Miguel
+--Diagramme Sequence/ Cas d'utilisation -> Miguel
 
 General
 Utiliser Bean Validation
