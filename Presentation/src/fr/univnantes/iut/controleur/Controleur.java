@@ -26,7 +26,11 @@ public class Controleur extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
 		process(request, response);
+=======
+		processus(request, response);
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	}
 
 	/**
@@ -35,6 +39,7 @@ public class Controleur extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
 		process(request, response);
 	}
 
@@ -69,6 +74,44 @@ public class Controleur extends HttpServlet {
 			getServletContext().getNamedDispatcher("template").forward(request,
 					response);
 		}
+=======
+		processus(request, response);
+	}
+
+	private void processus(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Path info: " + request.getPathInfo());
+		System.out.println("Param Login: " + request.getParameter("login"));
+		String dispatcher = "";
+		if("/nouveauadherent".equals(request.getPathInfo())){
+			dispatcher = "nouveauadherentcontroleur";
+		}
+		else if (request.getSession().getAttribute("login") == null) {
+			if(request.getParameter("login") != null){
+				dispatcher = "loginControleur";
+			}else{
+				dispatcher = "login";
+			}
+		}
+		else if(request.getParameter("logout") != null){
+			request.getSession().removeAttribute("login");
+			dispatcher = "login";
+		}
+		else{
+			if (request.getPathInfo() != null) {
+				request.setAttribute("page",
+						request.getPathInfo().replace("/", ""));
+			}
+			else {
+				request.setAttribute("page", "accueil");
+			}
+			dispatcher = "template";
+		}
+		
+		getServletContext().getNamedDispatcher(dispatcher).forward(request,
+				response);
+		
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	}
 
 }

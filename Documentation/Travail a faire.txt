@@ -1,10 +1,10 @@
 --Header -> Leo
 Login / Deconnexion -> Gildas
-Accueil -> Miguel
+--Accueil -> Miguel
 Articles -> Gildas
 Commande -> Leo
-Creation Compte -> Leo
-Base de donnes -> Miguel
+Creation Compte -> Moi
+--Base de donnes -> Miguel
 CSS -> Gildas
 Servlet - Controleur -> Leo
 Diagramme Sequence/ Cas d'utilisation -> Miguel
@@ -24,3 +24,14 @@ Creation Compte:  /jsp/nouveauadherent.jsp    Route: /nouveauadherent
 
 Css:
 /css/*
+
+
+Presentacion: 
+portada : nombres, fecha, nombre de proyecto
+indice/resumen por cada tema
+tema: titulo, imagenes, desarrollo del tema (solo temas y subtemas)
+*arquitectura, utiles, problematica, soluciones, mvc, porque mvc, como implementamos el mvc, et sintesis de ventajas y desventajas. y que podemos aportar
+
+notas: poner el titulo del tema y el plano de temas, numerar paginas, terminar por preguntas y respuestas
+
+ajouter le raport sonar

@@ -26,7 +26,12 @@ public class Login extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
 		redirect(request, response);
+=======
+		getServletContext().getNamedDispatcher("login").forward(request,
+				response);
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	}
 
 	/**
@@ -35,6 +40,7 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
 		//chercher dans la BdD si les donnes sont corrects.
 		request.getSession().setAttribute("login", "UserTest");
 		redirect(request, response);
@@ -45,6 +51,13 @@ public class Login extends HttpServlet {
 		request.setAttribute("page", "accueil");
 		getServletContext().getNamedDispatcher("template").forward(
 				request, response);
+=======
+		// chercher dans la BdD si les donnes sont corrects.
+		request.getSession().setAttribute("login", "UserTest");
+		request.setAttribute("page", "accueil");
+		response.sendRedirect(request.getContextPath() + "/association/");
+
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	}
 
 }

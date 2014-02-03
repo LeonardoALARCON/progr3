@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Wed Jan 29 11:50:00 CET 2014 : Apache Derby Network Server - 10.10.1.1 - (1458268) démarré et prêt à accepter les connexions sur le port 1527
 ----------------------------------------------------------------
 Wed Jan 29 11:51:48 CET 2014:
@@ -110,3 +111,19 @@ os.arch=amd64
 os.version=3.2.0-49-generic
 derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
 Chargeur de classe de la base de données démarré - derby.database.classpath = ''
+=======
+Wed Jan 29 17:06:19 CET 2014 : Apache Derby Network Server - 10.10.1.1 - (1458268) démarré et prêt à accepter les connexions sur le port 1527
+----------------------------------------------------------------
+Wed Jan 29 17:06:25 CET 2014:
+Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance a816c00e-0143-dec0-45a7-ffffb46ff22b 
+dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@6d6f0472
+Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_27-b27
+user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
+os.name=Linux
+os.arch=amd64
+os.version=3.2.0-49-generic
+derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
+Chargeur de classe de la base de données démarré - derby.database.classpath = ''
+>>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
