@@ -3,13 +3,21 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/antlr-2.7.6.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/commons-collections-3.1.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/hibernate3.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/javassist-3.12.0.GA.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/jta-1.1.jar"/>
-	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/~E13A198G/Hibernate-3.6.10/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/classmate-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/el-ri-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-validator-5.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/javax.el-api-2.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/jboss-logging-3.1.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.7.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,7 +1,7 @@
 --<ScriptOptions statementTerminator=";"/>
-     --drop table assoc.CATALOGUE;
-     --drop table assoc.ADHERANT;
-     --drop table assoc.COMMANDE;
+     drop table assoc.CATALOGUE;
+     drop table assoc.ADHERANT;
+     drop table assoc.COMMANDE;
 CREATE TABLE assoc.CATALOGUE (
 		CODE INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY  (START WITH 1 ,INCREMENT BY 1),
 		NOM CHAR(20) NOT NULL,
@@ -23,15 +23,10 @@ CREATE TABLE assoc.ADHERANT (
 CREATE TABLE assoc.COMMANDE (
 		CODE INTEGER NOT NULL,
 		ID_ADH  CHAR(20) NOT NULL,
-<<<<<<< HEAD
 		QUANTITE INTEGER NOT NULL,
-		date_commande DATE NOT NULL
-=======
-		QUANTITE DOUBLE NOT NULL,
 		DATE_COMMANDE DATE NOT NULL
->>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
 	);
-	drop table assoc.COMMANDE;
+	
 		
 ALTER TABLE assoc.ADHERANT ADD CONSTRAINT pk PRIMARY KEY (ID_ADH);
 
