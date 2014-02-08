@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({ @NamedQuery(name = "Article.findAll", 
 query = "SELECT a FROM Article a") })
-@Table(name="CATALOGUE", schema="ROOT")
+@Table(name="CATALOGUE", schema="ASSOC")
 public class Article {
 	@Id
 	@Column(name="CODE")

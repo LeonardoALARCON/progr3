@@ -1,21 +1,10 @@
 package fr.univnantes.iut.test;
 
-import static org.junit.Assert.*;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-
-import org.junit.Test;
-
-import fr.univnantes.iut.beans.Adherent;
 import fr.univnantes.iut.service.AdherentService;
 
-public class TEST {
+public class TestBase {
 
-	@Test
-	public void testBDD() {			
+	public static void main(String[] args) {
 		AdherentService as = new AdherentService();
 
 		/*Adherent ad = new Adherent();
@@ -30,5 +19,7 @@ public class TEST {
 		as.create(ad);
 				
 		as.listAll();*/
+
 	}
+
 }

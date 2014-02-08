@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({ @NamedQuery(name = "Adherent.findAll", 
 query = "SELECT a FROM Adherent a") })
-@Table(name="ADHERANT", schema="ROOT")
+@Table(name="ADHERANT", schema="ASSOC")
 public class Adherent {
 	@Id
 	@Column(name="ID_ADH")

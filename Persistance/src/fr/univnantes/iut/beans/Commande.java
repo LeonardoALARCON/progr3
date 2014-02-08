@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({ @NamedQuery(name = "Commande.findAll", 
 query = "SELECT c FROM Commande c") })
-@Table(name="COMMANDE", schema="ROOT")
+@Table(name="COMMANDE", schema="ASSOC")
 public class Commande {
 	@Id
 	@Column(name="CODE")
