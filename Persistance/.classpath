@@ -19,6 +19,5 @@
 	<classpathentry kind="lib" path="lib/validation-api-1.1.0.Final.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-simple-1.7.6.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="lib/hibernate-search-3.2.0.Final.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

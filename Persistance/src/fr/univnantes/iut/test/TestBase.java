@@ -8,7 +8,7 @@ public class TestBase {
 
 	public static void main(String[] args) {
 		AdherentService as = new AdherentService();
-		as.delete("coq_sportif38");
+		
 		Adherent ad = new Adherent();
 		ad.setId("coq_sportif38");
 		ad.setMotPase("im_a_princess");
@@ -19,6 +19,19 @@ public class TestBase {
 		ad.setVille("NANTES");
 		ad.setPays("FRANCE");
 		as.create(ad);
+		
+		Adherent ad1 = new Adherent();
+		ad1.setId("LeoNardo");
+		ad1.setMotPase("chocolat");
+		ad1.setNom("Alarcon");
+		ad1.setPrenom("leo");
+		ad1.setAdresse("iut joffre");
+		ad1.setCodePostal("44000");
+		ad1.setVille("NANTES");
+		ad1.setPays("FRANCE");
+		as.create(ad);
+		as.create(ad1);
+		
 		System.out.println("ok");	
 		for(Adherent a :as.listAll()){
 			
@@ -26,6 +39,7 @@ public class TestBase {
 		}
 		
 		as.delete("coq_sportif38");
+		as.delete("LeoNardo");
 
 	}
 
