@@ -3,31 +3,29 @@ package fr.univnantes.iut.beans;
 import javax.persistence.*;
 
 @Entity
-@NamedQueries({ @NamedQuery(name = "Adherent.findAll", 
-query = "SELECT a FROM Adherent a") })
-@Table(name="ADHERANT", schema="ASSOC")
+@NamedQueries({ @NamedQuery(name = "Adherent.findAll", query = "SELECT a FROM Adherent a") })
+@Table(name = "ADHERANT", schema = "ASSOC")
 public class Adherent {
 	@Id
-	@Column(name="ID_ADH")
+	@Column(name = "ID_ADH")
 	private String id;
-	@Column(name="MDP")
+	@Column(name = "MDP")
 	private String motPasse;
-	@Column(name="NOM")
+	@Column(name = "NOM")
 	private String nom;
-	@Column(name="PRENOM")
+	@Column(name = "PRENOM")
 	private String prenom;
-	@Column(name="ADRESSE")
+	@Column(name = "ADRESSE")
 	private String adresse;
-	@Column(name="CP")
+	@Column(name = "CP")
 	private String codePostal;
-	@Column(name="VILLE")
+	@Column(name = "VILLE")
 	private String ville;
-	@Column(name="PAYS")
+	@Column(name = "PAYS")
 	private String pays;
-	
-	
-	public Adherent(){
-		
+
+	public Adherent() {
+
 	}
 
 	public String getId() {
@@ -93,5 +91,12 @@ public class Adherent {
 	public void setPays(String pays) {
 		this.pays = pays;
 	}
-	
+
+
+	public String toString() {
+		return "Adherent [id=" + id + ", last_name=" + nom + ", prenom="
+				+ prenom + ", adresse=" + adresse + ", codePostal="
+				+ codePostal + ", ville=" + ville + ", pays=" + pays + "]";
+	}
+
 }
