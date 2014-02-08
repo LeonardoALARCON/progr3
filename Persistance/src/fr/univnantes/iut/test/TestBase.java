@@ -1,5 +1,6 @@
 package fr.univnantes.iut.test;
 
+import fr.univnantes.iut.beans.Adherent;
 import fr.univnantes.iut.service.AdherentService;
 
 public class TestBase {
@@ -7,7 +8,7 @@ public class TestBase {
 	public static void main(String[] args) {
 		AdherentService as = new AdherentService();
 
-		/*Adherent ad = new Adherent();
+		Adherent ad = new Adherent();
 		ad.setId("coq_sportif38");
 		ad.setMotPase("im_a_princess");
 		ad.setNom("GILDAS");
@@ -18,7 +19,7 @@ public class TestBase {
 		ad.setPays("FRANCE");
 		as.create(ad);
 				
-		as.listAll();*/
+		as.listAll();
 
 	}
 
