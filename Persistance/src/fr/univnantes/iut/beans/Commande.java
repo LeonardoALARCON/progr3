@@ -55,6 +55,11 @@ public class Commande {
 		this.dateCommande = dateCommande;
 	}
 	
+	public String toString() {
+		return "Adherent [article=" + article + ", adherent=" + adherent + ", quantité="
+				+ quantite + ", date de la commande=" + dateCommande +"]";
+	}
+	
 	
 	
 }
