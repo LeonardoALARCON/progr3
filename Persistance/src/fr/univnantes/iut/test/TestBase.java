@@ -1,5 +1,6 @@
 package fr.univnantes.iut.test;
 
+
 import fr.univnantes.iut.beans.Adherent;
 import fr.univnantes.iut.service.AdherentService;
 
@@ -19,7 +20,12 @@ public class TestBase {
 		ad.setPays("FRANCE");
 		as.create(ad);
 				
-		as.listAll();
+		for(Adherent a :as.listAll()){
+			System.out.println("ok");
+			System.out.println(a.getId().toString());
+		}
+		
+		//as.delete("coq_sportif38");
 
 	}
 

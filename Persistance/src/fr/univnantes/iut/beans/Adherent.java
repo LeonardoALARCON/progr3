@@ -25,6 +25,7 @@ public class Adherent {
 	@Column(name="PAYS")
 	private String pays;
 	
+	
 	public Adherent(){
 		
 	}
@@ -92,6 +93,5 @@ public class Adherent {
 	public void setPays(String pays) {
 		this.pays = pays;
 	}
-	
 	
 }

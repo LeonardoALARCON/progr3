@@ -13,7 +13,7 @@ public class Commande {
 	@Column(name="CODE")
 	private int article;
 	@Column(name="ID_ADH")
-	private int adherent;
+	private String adherent;
 	@Column(name="QUANTITE")
 	private int quantite;
 	@Column(name="DATE_COMMANDE")
@@ -31,11 +31,11 @@ public class Commande {
 		this.article = article;
 	}
 
-	public int getAdherent() {
+	public String getAdherent() {
 		return adherent;
 	}
 
-	public void setAdherent(int adherent) {
+	public void setAdherent(String adherent) {
 		this.adherent = adherent;
 	}
 
