@@ -1,7 +1,9 @@
 --<ScriptOptions statementTerminator=";"/>
-     drop table assoc.CATALOGUE;
-     drop table assoc.ADHERANT;
-     drop table assoc.COMMANDE;
+drop table assoc.COMMANDE;
+drop table assoc.ADHERANT;
+drop table assoc.CATALOGUE;
+     
+     
 CREATE TABLE assoc.CATALOGUE (
 		CODE INTEGER PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY  (START WITH 1 ,INCREMENT BY 1),
 		NOM CHAR(20) NOT NULL,

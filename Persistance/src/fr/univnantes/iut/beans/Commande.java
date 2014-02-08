@@ -11,9 +11,9 @@ query = "SELECT c FROM Commande c") })
 public class Commande {
 	@Id
 	@Column(name="CODE")
-	private Article article;
+	private int article;
 	@Column(name="ID_ADH")
-	private Adherent adherent;
+	private int adherent;
 	@Column(name="QUANTITE")
 	private int quantite;
 	@Column(name="DATE_COMMANDE")
@@ -23,19 +23,19 @@ public class Commande {
 	
 	}
 
-	public Article getArticle() {
+	public int getArticle() {
 		return article;
 	}
 
-	public void setArticle(Article article) {
+	public void setArticle(int article) {
 		this.article = article;
 	}
 
-	public Adherent getAdherent() {
+	public int getAdherent() {
 		return adherent;
 	}
 
-	public void setAdherent(Adherent adherent) {
+	public void setAdherent(int adherent) {
 		this.adherent = adherent;
 	}
 
