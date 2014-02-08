@@ -94,7 +94,7 @@ public class Adherent {
 
 
 	public String toString() {
-		return "Adherent [id=" + id + ", last_name=" + nom + ", prenom="
+		return "Adherent [id=" + id + ", nom=" + nom + ", prenom="
 				+ prenom + ", adresse=" + adresse + ", codePostal="
 				+ codePostal + ", ville=" + ville + ", pays=" + pays + "]";
 	}

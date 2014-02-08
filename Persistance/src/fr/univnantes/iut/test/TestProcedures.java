@@ -5,7 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import fr.univnantes.iut.beans.Adherent;
+import fr.univnantes.iut.beans.Article;
 import fr.univnantes.iut.service.AdherentService;
+import fr.univnantes.iut.service.ArticleService;
 
 public class TestProcedures {
 
@@ -67,6 +69,50 @@ public class TestProcedures {
 		}
 		as.delete("coq_sportif38");
 		as.delete("LeoNardo");
+
+	}
+	
+	@Test
+	public void testCreationArticle() {
+		ArticleService as = new ArticleService();
+		Article ar = new Article();
+		ar.setNom("Crayon");
+		ar.setPrix(1);
+		ar.setStock(50);
+		as.create(ar);
+
+	}
+	
+	@Test
+	public void testSuppretionArticle() {
+		ArticleService as = new ArticleService();
+	
+		as.delete(1);
+	}
+	
+	@Test
+	public void testAffichageArticles() {
+		ArticleService as = new ArticleService();
+		as.delete(1);
+		
+		Article ar = new Article();
+		ar.setNom("Crayon");
+		ar.setPrix(1);
+		ar.setStock(50);
+		as.create(ar);
+		
+		Article ar1 = new Article();
+		ar1.setNom("gomme");
+		ar1.setPrix(2);
+		ar1.setStock(25);
+		as.create(ar1);
+		
+		System.out.println("ok");	
+		for(Article a :as.listAll()){
+			System.out.println(a.toString());
+		}
+		as.delete(1);
+		as.delete(2);
 
 	}
 	
