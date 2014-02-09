@@ -14,7 +14,7 @@ import fr.univnantes.iut.service.ArticleService;
 import fr.univnantes.iut.service.CommandeService;
 
 public class TestProcedures {
-/*
+
 	@Test
 	public void testCreationAdherent() {
 		AdherentService as = new AdherentService();
@@ -156,13 +156,14 @@ public class TestProcedures {
 		ars.delete(ar);
 	}
 	
+	
 	@Test
 	public void testSuppretionCommande() {
 		CommandeService cs = new CommandeService();
 	
 		cs.delete(1);
 	}
-	*/
+	
 	@Test
 	public void testAffichageCommandes() {
 		CommandeService cs = new CommandeService();
@@ -221,8 +222,8 @@ public class TestProcedures {
 		ars.delete(ar);
 		as.delete(ad);
 		as.delete(ad1);
-		
-
 	}
+	
+	
 	
 }
