@@ -10,6 +10,10 @@ query = "SELECT c FROM Commande c") })
 @Table(name="COMMANDE", schema="ASSOC")
 public class Commande {
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Basic(optional = false)
+	@Column(name="ID")
+	private int id;
 	@Column(name="CODE")
 	private int article;
 	@Column(name="ID_ADH")
@@ -23,6 +27,14 @@ public class Commande {
 	
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public int getArticle() {
 		return article;
 	}
