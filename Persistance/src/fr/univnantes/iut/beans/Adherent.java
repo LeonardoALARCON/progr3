@@ -1,6 +1,14 @@
 package fr.univnantes.iut.beans;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+import javax.validation.constraints.*;
+
+
 
 @Entity
 @NamedQueries({ @NamedQuery(name = "Adherent.findAll", 
@@ -9,6 +17,8 @@ query = "SELECT a FROM Adherent a") })
 public class Adherent {
 	@Id
 	@Column(name="ID_ADH")
+	@NotNull
+	@Min(1)
 	private String id;
 	@Column(name="MDP")
 	private String motPasse;
