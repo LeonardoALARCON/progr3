@@ -1,4 +1,5 @@
 package fr.univnantes.iut.service;
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -6,6 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import fr.univnantes.iut.beans.Adherent;
 import fr.univnantes.iut.beans.Article;
 
 public class ArticleService {
@@ -62,6 +64,23 @@ public class ArticleService {
 	public List<Article> listAll() {
 		query = em.createNamedQuery("Article.findAll");
 		List<Article> articles = query.getResultList();
+		return articles;
+
+	}
+	
+	public List<Article> listAll(String a) {
+		final String QUERY = "select ar from Article ar, Commande co " +
+				"where ar.code = co.article and co.adherent= :a";
+		Query query = em.createQuery( QUERY ) ;
+		query.setParameter("a", a);
+		List<Article> articles = query.getResultList();
+		
+		System.out.println("Nombre des articles : " + articles.size() );
+		
+		for ( Article ar : articles ) {
+				System.out.println("Article : " + ar );
+			}
+
 		return articles;
 
 	}

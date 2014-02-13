@@ -156,7 +156,6 @@ public class TestProcedures {
 		ars.delete(ar);
 	}
 	
-	
 	@Test
 	public void testSuppretionCommande() {
 		CommandeService cs = new CommandeService();
@@ -223,7 +222,32 @@ public class TestProcedures {
 		as.delete(ad);
 		as.delete(ad1);
 	}
+	@Test
+	public void testChercherArticlesParAdherent() {
+		ArticleService ars = new ArticleService();
+		AdherentService as = new AdherentService();
+		
+		Adherent ad = new Adherent();
+			ad.setId("coq_sportif38");
+			ad.setMotPase("im_a_princess");
+			ad.setNom("GILDAS");
+			ad.setPrenom("LE COQ");
+			ad.setAdresse("15, PONT SOUR L'ERDRE");
+			ad.setCodePostal("44000");
+			ad.setVille("NANTES");
+			ad.setPays("FRANCE");
+			as.create(ad);
 	
-	
-	
+		ars.listAll(ad.getId());
+		
+		as.delete(ad);
+	} 
+	@Test	
+	public void testDiminuerStock() {
+		CommandeService cs = new CommandeService();
+		AdherentService as = new AdherentService();
+		ArticleService ars = new ArticleService();
+		
+		
+	}
 }

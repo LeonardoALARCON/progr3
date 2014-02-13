@@ -1,4 +1,5 @@
 package fr.univnantes.iut.service;
+
 import java.util.Date;
 import java.util.List;
 
@@ -47,8 +48,8 @@ public class CommandeService {
 		em.persist(commande);
 		em.getTransaction().commit();
 		//Decrementer un article
-		//ArticleService ars = new ArticleService();
-		//ars.diminuerStock(ar.getCode,int quantité);
+//		ArticleService ars = new ArticleService();
+//		ars.diminuerStock(ar.getCode, quantite);
 	}
 
 	public void update(Commande commande) {
@@ -56,8 +57,8 @@ public class CommandeService {
 		em.merge(commande);
 		em.getTransaction().commit();
 		//mettre a jour aussi
-		//ArticleService ars = new ArticleService();
-		//ars.diminuerStock(ar.getCode,int quantité);
+//		ArticleService ars = new ArticleService();
+//		ars.diminuerStock(ar.getCode, quantite);
 	}
 
 	public void closeConnection() {
