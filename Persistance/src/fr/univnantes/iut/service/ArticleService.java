@@ -68,6 +68,7 @@ public class ArticleService {
 
 	}
 	
+	@SuppressWarnings("unchecked")
 	public List<Article> listAll(String a) {
 		final String QUERY = "select ar from Article ar, Commande co " +
 				"where ar.code = co.article and co.adherent= :a";
@@ -85,4 +86,13 @@ public class ArticleService {
 
 	}
 
+	public void diminuerStock(int code, int quantite){
+		final String QUERY = "update Article ar SET ar.stock = ar.stock - :quantité "+
+				"where ar.code = Commande.article and Commande.adherent= :a";
+		Query query = em.createQuery( QUERY ) ;
+		query.setParameter("quantité", quantite);
+		query.setParameter("code", code);
+        System.out.println(query.getSingleResult());
+	}
+	
 }

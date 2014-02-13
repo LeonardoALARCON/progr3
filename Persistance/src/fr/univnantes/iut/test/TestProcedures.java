@@ -222,6 +222,7 @@ public class TestProcedures {
 		as.delete(ad);
 		as.delete(ad1);
 	}
+
 	@Test
 	public void testChercherArticlesParAdherent() {
 		ArticleService ars = new ArticleService();
@@ -242,12 +243,39 @@ public class TestProcedures {
 		
 		as.delete(ad);
 	} 
+
 	@Test	
 	public void testDiminuerStock() {
 		CommandeService cs = new CommandeService();
 		AdherentService as = new AdherentService();
 		ArticleService ars = new ArticleService();
 		
+		Adherent ad1 = new Adherent();
+		ad1.setId("LeoNardo");
+		ad1.setMotPase("chocolat");
+		ad1.setNom("Alarcon");
+		ad1.setPrenom("leo");
+		ad1.setAdresse("iut joffre");
+		ad1.setCodePostal("44000");
+		ad1.setVille("NANTES");
+		ad1.setPays("FRANCE");
+		as.create(ad1);
+				
+		Article ar = new Article();
+		ar.setNom("Crayon");
+		ar.setPrix(1.50);
+		ar.setStock(50);
+		ars.create(ar);
 		
+		Commande co = new Commande();
+		co.setAdherent("LeoNardo");
+		co.setArticle(ar.getCode());
+		co.setQuantite(2);
+		co.setDateCommande(new Date());
+		cs.create(co);		
+		
+		cs.delete(co);
+		as.delete(ad1);
+		ars.delete(ar);
 	}
 }
