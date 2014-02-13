@@ -5,9 +5,11 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({ @NamedQuery(name = "Article.findAll", 
 query = "SELECT a FROM Article a") })
-@Table(name="CATALOGUE", schema="ROOT")
+@Table(name="CATALOGUE", schema="ASSOC")
 public class Article {
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Basic(optional = false)
 	@Column(name="CODE")
 	private int code;
 	@Column(name="NOM")
@@ -51,6 +53,11 @@ public class Article {
 
 	public void setStock(int stock) {
 		this.stock = stock;
+	}
+	
+	public String toString() {
+		return "Adherent [code=" + code + ", nom=" + nom + ", prix="
+				+ prix + ", stock=" + stock +"]";
 	}
 
 }

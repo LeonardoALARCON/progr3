@@ -17,6 +17,11 @@
 	<classpathentry kind="lib" path="lib/jboss-logging-3.1.1.GA.jar"/>
 	<classpathentry kind="lib" path="lib/jta-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/validation-api-1.1.0.Final.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="/hometu/etudiants/E13A198G/workspace/progr3/Persistance/lib/slf4j-api-1.6.1.jar"/>
+=======
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
+>>>>>>> fb72c00fb89d8b810ad151d1b205f1a9d22dd6db
 	<classpathentry kind="output" path="bin"/>
 </classpath>

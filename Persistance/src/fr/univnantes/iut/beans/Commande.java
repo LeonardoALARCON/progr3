@@ -7,13 +7,17 @@ import javax.persistence.*;
 @Entity
 @NamedQueries({ @NamedQuery(name = "Commande.findAll", 
 query = "SELECT c FROM Commande c") })
-@Table(name="COMMANDE", schema="ROOT")
+@Table(name="COMMANDE", schema="ASSOC")
 public class Commande {
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Basic(optional = false)
+	@Column(name="ID")
+	private int id;
 	@Column(name="CODE")
-	private Article article;
+	private int article;
 	@Column(name="ID_ADH")
-	private Adherent adherent;
+	private String adherent;
 	@Column(name="QUANTITE")
 	private int quantite;
 	@Column(name="DATE_COMMANDE")
@@ -23,19 +27,27 @@ public class Commande {
 	
 	}
 
-	public Article getArticle() {
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public int getArticle() {
 		return article;
 	}
 
-	public void setArticle(Article article) {
+	public void setArticle(int article) {
 		this.article = article;
 	}
 
-	public Adherent getAdherent() {
+	public String getAdherent() {
 		return adherent;
 	}
 
-	public void setAdherent(Adherent adherent) {
+	public void setAdherent(String adherent) {
 		this.adherent = adherent;
 	}
 
@@ -53,6 +65,11 @@ public class Commande {
 
 	public void setDateCommande(Date dateCommande) {
 		this.dateCommande = dateCommande;
+	}
+	
+	public String toString() {
+		return "Adherent [article=" + article + ", adherent=" + adherent + ", quantité="
+				+ quantite + ", date de la commande=" + dateCommande +"]";
 	}
 	
 	
