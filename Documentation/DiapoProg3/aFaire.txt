@@ -1,0 +1,6 @@
+l'architecture, les outils, 
+les problèmes, les solutions, MVC, 
+pour quoi MVC, 
+comme nous mettons en œuvre le MVC, 
+et la synthèse des avantages et des inconvénients. 
+et qu'est-ce qu'on peur ameliorer
