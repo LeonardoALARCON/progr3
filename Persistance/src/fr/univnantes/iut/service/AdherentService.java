@@ -21,11 +21,11 @@ public class AdherentService {
 		System.out.println("EntityManager status : open ? " + em.isOpen());
 	}
 
-	public Adherent find(int id) {
+	public Adherent find(String id) {
 		return em.find(Adherent.class, id);
 	}
 
-	public void delete(int id) {
+	public void delete(String id) {
 		Adherent adherent = em.find(Adherent.class, id);
 		if (adherent != null) {
 			em.getTransaction().begin();
@@ -64,7 +64,6 @@ public class AdherentService {
 		query = em.createNamedQuery("Adherent.findAll");
 		List<Adherent> adherents = query.getResultList();
 		return adherents;
-
 	}
 
 }

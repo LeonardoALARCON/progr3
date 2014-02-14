@@ -11,35 +11,53 @@ import javax.validation.constraints.*;
 
 
 @Entity
-@NamedQueries({ @NamedQuery(name = "Adherent.findAll", query = "SELECT a FROM Adherent a") })
-@Table(name = "ADHERANT", schema = "ASSOC")
+@NamedQueries({ @NamedQuery(name = "Adherent.findAll", 
+query = "SELECT a FROM Adherent a") })
+@Table(name="ADHERANT", schema="ROOT")
 public class Adherent {
 	@Id
-<<<<<<< HEAD
 	@Column(name="ID_ADH")
 	@NotNull
-	@Min(1)
-=======
-	@Column(name = "ID_ADH")
->>>>>>> fb72c00fb89d8b810ad151d1b205f1a9d22dd6db
+	@Size(min = 1, max = 20)
 	private String id;
-	@Column(name = "MDP")
+	
+	@Column(name="MDP")
+	@NotNull
+	@Size(min = 1, max = 20)
 	private String motPasse;
-	@Column(name = "NOM")
+	
+	@Column(name="NOM")
+	@NotNull
+	@Size(min = 1, max = 20)
 	private String nom;
-	@Column(name = "PRENOM")
+	
+	@Column(name="PRENOM")
+	@NotNull
+	@Size(min = 1, max = 20)
 	private String prenom;
-	@Column(name = "ADRESSE")
+	
+	@Column(name="ADRESSE")
+	@NotNull
+	@Size(min = 1, max = 60)
 	private String adresse;
-	@Column(name = "CP")
+	
+	@Column(name="CP")
+	@NotNull
+	@Size(min=5, max=5)
 	private String codePostal;
-	@Column(name = "VILLE")
+	
+	@Column(name="VILLE")
+	@NotNull
+	@Size(min = 1, max = 20)
 	private String ville;
-	@Column(name = "PAYS")
+	
+	@Column(name="PAYS")
+	@NotNull
+	@Size(min = 1, max = 20)
 	private String pays;
-
-	public Adherent() {
-
+	
+	public Adherent(){
+		
 	}
 
 	public String getId() {
@@ -105,12 +123,6 @@ public class Adherent {
 	public void setPays(String pays) {
 		this.pays = pays;
 	}
-
-
-	public String toString() {
-		return "Adherent [id=" + id + ", nom=" + nom + ", prenom="
-				+ prenom + ", adresse=" + adresse + ", codePostal="
-				+ codePostal + ", ville=" + ville + ", pays=" + pays + "]";
-	}
-
+	
+	
 }

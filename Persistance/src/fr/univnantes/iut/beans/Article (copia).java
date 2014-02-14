@@ -1,22 +1,32 @@
 package fr.univnantes.iut.beans;
 
 import javax.persistence.*;
+import javax.validation.constraints.*;
 
 @Entity
 @NamedQueries({ @NamedQuery(name = "Article.findAll", 
 query = "SELECT a FROM Article a") })
-@Table(name="CATALOGUE", schema="ASSOC")
+@Table(name="CATALOGUE", schema="ROOT")
 public class Article {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Basic(optional = false)
 	@Column(name="CODE")
+	@NotNull
+	@Min(1)
 	private int code;
+	
 	@Column(name="NOM")
+	@NotNull
+	@Size(min = 1, max = 20)
 	private String nom;
+	
 	@Column(name="PRIX")
+	@NotNull
+	@DecimalMin("0.01")
 	private double prix;
+	
 	@Column(name="STOCK")
+	@NotNull
+	@Min(0)
 	private int stock;
 	
 	public Article(){
@@ -53,11 +63,6 @@ public class Article {
 
 	public void setStock(int stock) {
 		this.stock = stock;
-	}
-	
-	public String toString() {
-		return "Adherent [code=" + code + ", nom=" + nom + ", prix="
-				+ prix + ", stock=" + stock +"]";
 	}
 
 }
