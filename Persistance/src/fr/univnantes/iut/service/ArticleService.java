@@ -86,13 +86,12 @@ public class ArticleService {
 
 	}
 
-	public void diminuerStock(int code, int quantite){
-		final String QUERY = "update Article ar SET ar.stock = ar.stock - :quantité "+
-				"where ar.code = Commande.article and Commande.adherent= :a";
-		Query query = em.createQuery( QUERY ) ;
-		query.setParameter("quantité", quantite);
-		query.setParameter("code", code);
-        System.out.println(query.getSingleResult());
+	public void diminuerStock(Article article, int quantite){
+		article.setStock(article.getStock()-quantite);
+		em.getTransaction().begin();
+		em.merge(article);
+		em.getTransaction().commit();
+		System.out.println("Stock décrementé");
 	}
 	
 }

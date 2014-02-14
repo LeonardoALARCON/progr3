@@ -60,4 +60,8 @@ public class Article {
 				+ prix + ", stock=" + stock +"]";
 	}
 
+	public Article getCode(int article) {
+		return this.getCode(article);
+	}
+
 }
