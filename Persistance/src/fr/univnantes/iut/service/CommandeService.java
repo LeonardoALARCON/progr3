@@ -59,7 +59,7 @@ public class CommandeService {
 		em.getTransaction().commit();
 		//mettre a jour aussi
 		ArticleService ars = new ArticleService();
-		Article art = art.getCode(commande.getArticle());
+		Article art = ((Article) ars).getCode(commande.getArticle());
 		ars.diminuerStock(art, commande.getQuantite());
 	}
 

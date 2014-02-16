@@ -186,5 +186,5 @@ fi
 # specific language governing permissions and limitations
 # under the License.
 
-derby_exec_command="exec \"$JAVACMD\" $DERBY_OPTS -classpath \"$LOCALCLASSPATH\" org.apache.derby.drda.NetworkServerControl start $@"
+derby_exec_command="exec \"$JAVACMD\" $DERBY_OPTS -classpath \"$LOCALCLASSPATH\" -Djava.security.manager -Djava.security.policy=socket.policy org.apache.derby.drda.NetworkServerControl start $@"
 eval $derby_exec_command

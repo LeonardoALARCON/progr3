@@ -15,13 +15,9 @@ import javax.validation.constraints.*;
 @Table(name = "ADHERANT", schema = "ASSOC")
 public class Adherent {
 	@Id
-<<<<<<< HEAD
 	@Column(name="ID_ADH")
 	@NotNull
 	@Min(1)
-=======
-	@Column(name = "ID_ADH")
->>>>>>> fb72c00fb89d8b810ad151d1b205f1a9d22dd6db
 	private String id;
 	@Column(name = "MDP")
 	private String motPasse;

@@ -1,10 +1,14 @@
 package fr.univnantes.iut.controleur;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import fr.univnantes.iut.beans.Adherent;
+import fr.univnantes.iut.service.AdherentService;
 
 /**
  * Servlet implementation class Login
@@ -36,7 +40,8 @@ public class Login extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		// chercher dans la BdD si les donnes sont corrects.
+		AdherentService adSer = new AdherentService();
+		Adherent ad = adSer.find(1);
 		request.getSession().setAttribute("login", "UserTest");
 		redirect(request, response);
 	}

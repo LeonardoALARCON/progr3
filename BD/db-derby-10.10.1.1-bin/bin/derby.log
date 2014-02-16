@@ -1,134 +1,203 @@
-<<<<<<< HEAD
-Mon Feb 03 16:11:03 CET 2014 : Impossible d'écouter sur le port 1527, sur l'hôte localhost :
- java.net.BindException: Address already in use
-=======
-<<<<<<< HEAD
-Wed Jan 29 11:50:00 CET 2014 : Apache Derby Network Server - 10.10.1.1 - (1458268) démarré et prêt à accepter les connexions sur le port 1527
-----------------------------------------------------------------
-Wed Jan 29 11:51:48 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance a816c00e-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-----------------------------------------------------------------
-Wed Jan 29 11:51:49 CET 2014:
-Fermeture de l'instance a816c00e-0143-dd9e-adfd-ffffb46ff22b sur le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100 
-Wed Jan 29 11:51:49 CET 2014 Thread[DRDAConnThread_3,5,main] (DATABASE = assoc), (DRDAID = {2}), Arrêt de la base de données 'assoc'.
-----------------------------------------------------------------
-Wed Jan 29 11:51:52 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance e50d80a4-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-----------------------------------------------------------------
-Wed Jan 29 11:51:52 CET 2014:
-Fermeture de l'instance e50d80a4-0143-dd9e-adfd-ffffb46ff22b sur le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100 
-Wed Jan 29 11:51:52 CET 2014 Thread[DRDAConnThread_4,5,main] (DATABASE = assoc), (DRDAID = {4}), Arrêt de la base de données 'assoc'.
-----------------------------------------------------------------
-Wed Jan 29 11:52:05 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance 4d3680a5-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-----------------------------------------------------------------
-Wed Jan 29 11:52:30 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance af8ec0b3-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/bookstore avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-----------------------------------------------------------------
-Wed Jan 29 11:52:31 CET 2014:
-Fermeture de l'instance af8ec0b3-0143-dd9e-adfd-ffffb46ff22b sur le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/bookstore avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100 
-Wed Jan 29 11:52:31 CET 2014 Thread[DRDAConnThread_6,5,main] (DATABASE = bookstore), (DRDAID = {7}), Arrêt de la base de données 'bookstore'.
-----------------------------------------------------------------
-Wed Jan 29 11:52:34 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance 34b10149-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/bookstore avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-----------------------------------------------------------------
-Wed Jan 29 11:59:25 CET 2014:
-Fermeture de l'instance 4d3680a5-0143-dd9e-adfd-ffffb46ff22b sur le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100 
-Wed Jan 29 11:59:25 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = assoc), (DRDAID = {9}), Arrêt de la base de données 'assoc'.
-----------------------------------------------------------------
-Wed Jan 29 12:01:12 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance 0d18d1c3-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-----------------------------------------------------------------
-Wed Jan 29 12:01:12 CET 2014:
-Fermeture de l'instance 0d18d1c3-0143-dd9e-adfd-ffffb46ff22b sur le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100 
-Wed Jan 29 12:01:12 CET 2014 Thread[DRDAConnThread_5,5,main] (DATABASE = assoc), (DRDAID = {11}), Arrêt de la base de données 'assoc'.
-----------------------------------------------------------------
-Wed Jan 29 12:01:28 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance 498991c4-0143-dd9e-adfd-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@77cde100
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
-=======
-Wed Jan 29 17:06:19 CET 2014 : Apache Derby Network Server - 10.10.1.1 - (1458268) démarré et prêt à accepter les connexions sur le port 1527
-----------------------------------------------------------------
-Wed Jan 29 17:06:25 CET 2014:
-Amorçage de Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268) : instance a816c00e-0143-dec0-45a7-ffffb46ff22b 
-dans le répertoire de base de données /hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc avec le chargeur de classe sun.misc.Launcher$AppClassLoader@6d6f0472
-Chargé de file:/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/lib/derby.jar
-java.vendor=Sun Microsystems Inc.
-java.runtime.version=1.6.0_27-b27
-user.dir=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-os.name=Linux
-os.arch=amd64
-os.version=3.2.0-49-generic
-derby.system.home=/hometu/etudiants/E13A198G/workspace/progr3/BD/db-derby-10.10.1.1-bin/bin
-Chargeur de classe de la base de données démarré - derby.database.classpath = ''
->>>>>>> 41ff946a69520d6fb79c9e9e7370c164a4ceae0d
->>>>>>> 6c998f647c823e99082503f2b11f67b2ccbc37d0
+Sun Feb 16 17:07:31 CET 2014 : Servidor de red Apache Derby: Se ha iniciado 10.10.1.1 - (1458268) y está listo para aceptar las conexiones en el puerto 1527
+Sun Feb 16 17:07:46 CET 2014 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha podido iniciar la base de datos 'sample' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: No se ha podido iniciar la base de datos 'sample' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 17 more
+Caused by: java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	... 14 more
+Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.resolveServicePropertiesFiles(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$500(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.getServiceProperties(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at java.security.AccessControlContext.checkPermission(Unknown Source)
+	at java.security.AccessController.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkRead(Unknown Source)
+	at java.io.File.exists(Unknown Source)
+	... 23 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 16 more
+Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.resolveServicePropertiesFiles(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$500(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.getServiceProperties(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at java.security.AccessControlContext.checkPermission(Unknown Source)
+	at java.security.AccessController.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkRead(Unknown Source)
+	at java.io.File.exists(Unknown Source)
+	... 23 more
+============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.resolveServicePropertiesFiles(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$500(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.getServiceProperties(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at java.security.AccessControlContext.checkPermission(Unknown Source)
+	at java.security.AccessController.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkRead(Unknown Source)
+	at java.io.File.exists(Unknown Source)
+	... 23 more
+============= end nested exception, level (2) ===========
+============= begin nested exception, level (3) ===========
+ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.resolveServicePropertiesFiles(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$500(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.getServiceProperties(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at java.security.AccessControlContext.checkPermission(Unknown Source)
+	at java.security.AccessController.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkRead(Unknown Source)
+	at java.io.File.exists(Unknown Source)
+	... 23 more
+============= end nested exception, level (3) ===========
+============= begin nested exception, level (4) ===========
+java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+	at java.security.AccessControlContext.checkPermission(Unknown Source)
+	at java.security.AccessController.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkPermission(Unknown Source)
+	at java.lang.SecurityManager.checkRead(Unknown Source)
+	at java.io.File.exists(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.resolveServicePropertiesFiles(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.access$500(Unknown Source)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.impl.services.monitor.StorageFactoryService.getServiceProperties(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (4) ===========
+Cleanup action completed
+Sun Feb 16 17:07:46 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = sample), (DRDAID = {1}), No se ha podido iniciar la base de datos 'sample' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
+Sun Feb 16 17:07:46 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = sample), (DRDAID = {1}), Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
