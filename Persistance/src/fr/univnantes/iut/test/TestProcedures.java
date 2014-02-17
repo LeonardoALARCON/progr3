@@ -275,9 +275,9 @@ public class TestProcedures {
 		cs.create(co);		
 		
 		
-		//cs.delete(co);
-		//ars.delete(ar);
-		//as.delete(ad1);
+		cs.delete(co);
+		ars.delete(ar);
+		as.delete(ad1);
 		
 	}
 }
