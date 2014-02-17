@@ -69,7 +69,7 @@ public class ArticleService {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<Article> listAll(String a) {
+	public List<Article> listAll(Adherent a) {
 		final String QUERY = "select ar from Article ar, Commande co " +
 				"where ar.code = co.article and co.adherent= :a";
 		Query query = em.createQuery( QUERY ) ;
@@ -93,7 +93,7 @@ public class ArticleService {
 		
 		em.merge(article);
 		em.getTransaction().commit();
-		System.out.println("Stock décrementé");
+		System.out.println("Stock dï¿½crementï¿½");
 	}
 	
 }

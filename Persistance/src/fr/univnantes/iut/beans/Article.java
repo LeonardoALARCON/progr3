@@ -1,26 +1,29 @@
 package fr.univnantes.iut.beans;
 
+import java.util.Collection;
+
 import javax.persistence.*;
 
 @Entity
-@NamedQueries({ @NamedQuery(name = "Article.findAll", 
-query = "SELECT a FROM Article a") })
-@Table(name="CATALOGUE", schema="ASSOC")
+@NamedQueries({ @NamedQuery(name = "Article.findAll", query = "SELECT a FROM Article a") })
+@Table(name = "CATALOGUE", schema = "ASSOC")
 public class Article {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Basic(optional = false)
-	@Column(name="CODE")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Basic(optional = false)
+	@Column(name = "CODE")
 	private int code;
-	@Column(name="NOM")
+	@Column(name = "NOM")
 	private String nom;
-	@Column(name="PRIX")
+	@Column(name = "PRIX")
 	private double prix;
-	@Column(name="STOCK")
+	@Column(name = "STOCK")
 	private int stock;
-	
-	public Article(){
-		
+	@OneToMany(mappedBy = "article")
+	private Collection<Commande> commandes;
+
+	public Article() {
+
 	}
 
 	public int getCode() {
@@ -54,12 +57,18 @@ public class Article {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
-	
-		
-	public String toString() {
-		return "Adherent [code=" + code + ", nom=" + nom + ", prix="
-				+ prix + ", stock=" + stock +"]";
+
+	public Collection<Commande> getCommandes() {
+		return commandes;
 	}
 
+	public void setCommandes(Collection<Commande> commandes) {
+		this.commandes = commandes;
+	}
+
+	public String toString() {
+		return "Adherent [code=" + code + ", nom=" + nom + ", prix=" + prix
+				+ ", stock=" + stock + "]";
+	}
 
 }

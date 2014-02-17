@@ -5,26 +5,27 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@NamedQueries({ @NamedQuery(name = "Commande.findAll", 
-query = "SELECT c FROM Commande c") })
-@Table(name="COMMANDE", schema="ASSOC")
+@NamedQueries({ @NamedQuery(name = "Commande.findAll", query = "SELECT c FROM Commande c") })
+@Table(name = "COMMANDE", schema = "ASSOC")
 public class Commande {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Basic(optional = false)
-	@Column(name="ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Basic(optional = false)
+	@Column(name = "ID")
 	private int id;
-	@Column(name="CODE")
+	@ManyToOne
+	@JoinColumn(name = "CODE")
 	private Article article;
-	@Column(name="ID_ADH")
+	@ManyToOne
+	@JoinColumn(name = "ID_ADH")
 	private Adherent adherent;
-	@Column(name="QUANTITE")
+	@Column(name = "QUANTITE")
 	private int quantite;
-	@Column(name="DATE_COMMANDE")
+	@Column(name = "DATE_COMMANDE")
 	private Date dateCommande;
-	
+
 	public Commande() {
-	
+
 	}
 
 	public int getId() {
@@ -34,7 +35,7 @@ public class Commande {
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 	public Article getArticle() {
 		return article;
 	}
@@ -66,12 +67,11 @@ public class Commande {
 	public void setDateCommande(Date dateCommande) {
 		this.dateCommande = dateCommande;
 	}
-	
+
 	public String toString() {
-		return "Adherent [article=" + article + ", adherent=" + adherent + ", quantit�="
-				+ quantite + ", date de la commande=" + dateCommande +"]";
+		return "Adherent [article=" + article + ", adherent=" + adherent
+				+ ", quantit�=" + quantite + ", date de la commande="
+				+ dateCommande + "]";
 	}
-	
-	
-	
+
 }

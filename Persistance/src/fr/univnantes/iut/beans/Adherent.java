@@ -1,23 +1,25 @@
 package fr.univnantes.iut.beans;
 
+import java.util.Collection;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.*;
 
-
+import org.hibernate.annotations.CollectionOfElements;
 
 @Entity
 @NamedQueries({ @NamedQuery(name = "Adherent.findAll", query = "SELECT a FROM Adherent a") })
 @Table(name = "ADHERANT", schema = "ASSOC")
 public class Adherent {
 	@Id
-	@Column(name="ID_ADH")
+	@Column(name = "ID_ADH")
 	@NotNull
-	//@Min(1)
 	private String id;
 	@Column(name = "MDP")
 	private String motPasse;
@@ -33,6 +35,8 @@ public class Adherent {
 	private String ville;
 	@Column(name = "PAYS")
 	private String pays;
+	@OneToMany(mappedBy = "adherent")
+	private Collection<Commande> commandes;
 
 	public Adherent() {
 
@@ -102,11 +106,26 @@ public class Adherent {
 		this.pays = pays;
 	}
 
+	public String getMotPasse() {
+		return motPasse;
+	}
+
+	public void setMotPasse(String motPasse) {
+		this.motPasse = motPasse;
+	}
+
+	public Collection<Commande> getCommandes() {
+		return commandes;
+	}
+
+	public void setCommandes(Collection<Commande> commandes) {
+		this.commandes = commandes;
+	}
 
 	public String toString() {
-		return "Adherent [id=" + id + ", nom=" + nom + ", prenom="
-				+ prenom + ", adresse=" + adresse + ", codePostal="
-				+ codePostal + ", ville=" + ville + ", pays=" + pays + "]";
+		return "Adherent [id=" + id + ", nom=" + nom + ", prenom=" + prenom
+				+ ", adresse=" + adresse + ", codePostal=" + codePostal
+				+ ", ville=" + ville + ", pays=" + pays + "]";
 	}
 
 }
