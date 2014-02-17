@@ -17,6 +17,5 @@
 	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/validation-api-1.1.0.Final.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/lib/derbyclient.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

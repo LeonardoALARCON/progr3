@@ -1,7 +1,0 @@
-grant{
-	permission java.net.SocketPermission "localhost:1527", "listen,resolve";
-	permission java.util.PropertyPermission "derby.__serverStartedFromCmdLine", "write";
-	permission java.net.SocketPermission "localhost:0-", "accept"; 
-	permission java.io.FilePermission "derby.log", "read,write";
-	permission java.util.PropertyPermission "user.dir", "read";
-};
