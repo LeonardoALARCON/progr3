@@ -1,0 +1,11 @@
+Mon Feb 17 11:54:20 CET 2014 : Apache Derby Network Server - 10.9.1.0 - (1344872) se ha iniciado y está listo para aceptar conexiones en el puerto 1527
+----------------------------------------------------------------
+Mon Feb 17 11:54:24 CET 2014:
+ Arrancando Derby versión The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instancia a816c00e-0144-3f7b-78a4-ffff816d7023 
+en el directorio de base de datos /home/leonardo/Descargas/db-derby-10.9.1.0-bin/bin/assoc  con el cargador de clases sun.misc.Launcher$AppClassLoader@4ab03512
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_51-b13
+user.dir=/home/leonardo/Descargas/db-derby-10.9.1.0-bin/bin
+derby.system.home=/home/leonardo/Descargas/db-derby-10.9.1.0-bin/bin
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
