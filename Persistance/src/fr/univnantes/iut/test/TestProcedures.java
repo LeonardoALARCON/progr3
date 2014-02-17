@@ -246,10 +246,10 @@ public class TestProcedures {
 
 	@Test	
 	public void testDiminuerStock() {
-		CommandeService cs = new CommandeService();
 		AdherentService as = new AdherentService();
 		ArticleService ars = new ArticleService();
-		
+		CommandeService cs = new CommandeService();
+				
 		Adherent ad1 = new Adherent();
 		ad1.setId("LeoNardo");
 		ad1.setMotPase("chocolat");
@@ -274,8 +274,10 @@ public class TestProcedures {
 		co.setDateCommande(new Date());
 		cs.create(co);		
 		
+		
 		cs.delete(co);
-		as.delete(ad1);
 		ars.delete(ar);
+		as.delete(ad1);
+		
 	}
 }

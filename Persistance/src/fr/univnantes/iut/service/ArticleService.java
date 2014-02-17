@@ -87,11 +87,13 @@ public class ArticleService {
 	}
 
 	public void diminuerStock(Article article, int quantite){
-		article.setStock(article.getStock()-quantite);
+		System.out.println("test");
 		em.getTransaction().begin();
+		article.setStock(article.getStock()-quantite);
+		
 		em.merge(article);
 		em.getTransaction().commit();
-		System.out.println("Stock dÃ©crementÃ©");
+		System.out.println("Stock décrementé");
 	}
 	
 }

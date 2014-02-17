@@ -49,7 +49,6 @@ public class CommandeService {
 		em.getTransaction().commit();
 		//Decrementer un article
 		ArticleService ars = new ArticleService();
-		
 		ars.diminuerStock(commande.getArticle(), commande.getQuantite());
 	}
 

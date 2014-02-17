@@ -17,7 +17,7 @@ public class Adherent {
 	@Id
 	@Column(name="ID_ADH")
 	@NotNull
-	@Min(1)
+	//@Min(1)
 	private String id;
 	@Column(name = "MDP")
 	private String motPasse;
