@@ -11,8 +11,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.*;
 
-import org.hibernate.annotations.CollectionOfElements;
-
 @Entity
 @NamedQueries({ @NamedQuery(name = "Adherent.findAll", query = "SELECT a FROM Adherent a") })
 @Table(name = "ADHERANT", schema = "ASSOC")

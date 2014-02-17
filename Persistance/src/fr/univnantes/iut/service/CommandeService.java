@@ -1,6 +1,5 @@
 package fr.univnantes.iut.service;
 
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -8,8 +7,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import fr.univnantes.iut.beans.Adherent;
-import fr.univnantes.iut.beans.Article;
 import fr.univnantes.iut.beans.Commande;
 
 public class CommandeService {

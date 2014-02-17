@@ -8,6 +8,9 @@
 <link rel='stylesheet' type='text/css' href="${pageContext.servletContext.contextPath}/css/style.css" />
 </head>
 <body>
+<div>
+  <h3 id="message">${sessionScope.message}</h3>
+</div>
 <div id="formulaireAuthentification" class="center">
 <form name="formRegister" method="post">
 	<table>
@@ -32,31 +35,31 @@
     <tr>
       <td>Nom:</td>
       <td>
-       <input type="text" name="nom" size="20" maxlength="20" required><small>*</small>
+       <input type="text" name="nom" value="${sessionScope.adherent.nom}" size="20" maxlength="20" required><small>*</small>
       </td>
     </tr>
     <tr>
       <td>Prénom:</td>
       <td>
-       <input type="text" name="prenom" size="20" maxlength="20" required><small>*</small>
+       <input type="text" name="prenom" value="${sessionScope.adherent.prenom}" size="20" maxlength="20" required><small>*</small>
       </td>
     </tr>
     <tr>
       <td>Adresse:</td>
       <td>
-       <input type="text" name="adresse" size="20" maxlength="60">
+       <input type="text" name="adresse"  value="${sessionScope.adherent.adresse}" size="20" maxlength="60">
       </td>
     </tr>
     <tr>
       <td>Code Postal:</td>
       <td>
-       <input type="text" name="codepostal" size="10" maxlength="5">
+       <input type="text" name="codepostal" value="${sessionScope.adherent.codePostal}" size="10" maxlength="5">
       </td>
     </tr>
         <tr>
       <td>Ville:</td>
       <td>
-       <input type="text" name="ville" size="10" maxlength="5">
+       <input type="text" name="ville" value="${sessionScope.adherent.ville}" size="10" maxlength="5">
       </td>
     </tr>
     <tr>
