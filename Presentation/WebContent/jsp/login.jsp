@@ -10,6 +10,9 @@
 <body>
 <h3>Login</h3>
 <div id="authentification" class="center">
+<div>
+  <h3 id="message">${sessionScope.message}</h3>
+</div>
 <form name="formLogin" method="post">
 	<table>
 		<tr>

@@ -13,7 +13,7 @@
 			<c:choose>
 				<c:when test="${! empty sessionScope.login }">
 					<form name="logoutForm" method="post">
-					 ${sessionScope.login}
+					 ${sessionScope.login.nom} ${sessionScope.login.prenom}
 					 <input type="submit" name="logout" value="Déconnexion" />
 					</form>
 				</c:when>

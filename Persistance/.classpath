@@ -9,12 +9,12 @@
 	<classpathentry kind="lib" path="lib/javassist-3.12.0.GA.jar"/>
 	<classpathentry kind="lib" path="lib/jta-1.1.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/classmate-1.0.0.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/el-ri-1.0.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/hibernate-validator-5.0.2.Final.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/javax.el-api-2.2.4.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/jboss-logging-3.1.1.GA.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/classmate-1.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/el-ri-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/hibernate-validator-5.0.2.Final.jar"/>
+	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/javax.el-api-2.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/jboss-logging-3.1.1.GA.jar"/>
+	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/validation-api-1.1.0.Final.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/home/leonardo/workspaceEE/progr3/BD/db-derby-10.9.1.0-bin/lib/derbyclient.jar"/>
