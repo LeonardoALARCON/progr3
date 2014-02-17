@@ -15,9 +15,9 @@ public class Commande {
 	@Column(name="ID")
 	private int id;
 	@Column(name="CODE")
-	private int article;
+	private Article article;
 	@Column(name="ID_ADH")
-	private String adherent;
+	private Adherent adherent;
 	@Column(name="QUANTITE")
 	private int quantite;
 	@Column(name="DATE_COMMANDE")
@@ -35,19 +35,19 @@ public class Commande {
 		this.id = id;
 	}
 	
-	public int getArticle() {
+	public Article getArticle() {
 		return article;
 	}
 
-	public void setArticle(int article) {
+	public void setArticle(Article article) {
 		this.article = article;
 	}
 
-	public String getAdherent() {
+	public Adherent getAdherent() {
 		return adherent;
 	}
 
-	public void setAdherent(String adherent) {
+	public void setAdherent(Adherent adherent) {
 		this.adherent = adherent;
 	}
 
@@ -68,7 +68,7 @@ public class Commande {
 	}
 	
 	public String toString() {
-		return "Adherent [article=" + article + ", adherent=" + adherent + ", quantité="
+		return "Adherent [article=" + article + ", adherent=" + adherent + ", quantitï¿½="
 				+ quantite + ", date de la commande=" + dateCommande +"]";
 	}
 	

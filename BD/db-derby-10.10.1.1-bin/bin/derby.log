@@ -1,6 +1,6 @@
-Sun Feb 16 17:07:31 CET 2014 : Servidor de red Apache Derby: Se ha iniciado 10.10.1.1 - (1458268) y está listo para aceptar las conexiones en el puerto 1527
-Sun Feb 16 17:07:46 CET 2014 Thread[DRDAConnThread_2,5,main] Cleanup action starting
-java.sql.SQLException: No se ha podido iniciar la base de datos 'sample' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
+Sun Feb 16 18:58:17 CET 2014 : Servidor de red Apache Derby: Se ha iniciado 10.10.1.1 - (1458268) y está listo para aceptar las conexiones en el puerto 1527
+Sun Feb 16 19:04:05 CET 2014 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha podido iniciar la base de datos 'assoc' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
@@ -18,17 +18,17 @@ java.sql.SQLException: No se ha podido iniciar la base de datos 'sample' con el 
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Caused by: java.sql.SQLException: No se ha podido iniciar la base de datos 'sample' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
+Caused by: java.sql.SQLException: No se ha podido iniciar la base de datos 'assoc' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 17 more
-Caused by: java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	... 14 more
-Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
@@ -41,7 +41,7 @@ Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el ar
 	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
 	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
 	... 14 more
-Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at java.security.AccessControlContext.checkPermission(Unknown Source)
 	at java.security.AccessController.checkPermission(Unknown Source)
 	at java.lang.SecurityManager.checkPermission(Unknown Source)
@@ -49,7 +49,7 @@ Caused by: java.security.AccessControlException: access denied ("java.io.FilePer
 	at java.io.File.exists(Unknown Source)
 	... 23 more
 ============= begin nested exception, level (1) ===========
-java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
@@ -66,11 +66,11 @@ java.sql.SQLException: Falta el privilegio para la operación 'exists' en el arc
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Caused by: java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 16 more
-Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
@@ -83,7 +83,7 @@ Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el ar
 	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
 	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
 	... 14 more
-Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at java.security.AccessControlContext.checkPermission(Unknown Source)
 	at java.security.AccessController.checkPermission(Unknown Source)
 	at java.lang.SecurityManager.checkPermission(Unknown Source)
@@ -92,7 +92,7 @@ Caused by: java.security.AccessControlException: access denied ("java.io.FilePer
 	... 23 more
 ============= end nested exception, level (1) ===========
 ============= begin nested exception, level (2) ===========
-java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+java.sql.SQLException: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
@@ -111,7 +111,7 @@ java.sql.SQLException: Falta el privilegio para la operación 'exists' en el arc
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
@@ -124,7 +124,7 @@ Caused by: ERROR XBM0C: Falta el privilegio para la operación 'exists' en el ar
 	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
 	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
 	... 14 more
-Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at java.security.AccessControlContext.checkPermission(Unknown Source)
 	at java.security.AccessController.checkPermission(Unknown Source)
 	at java.lang.SecurityManager.checkPermission(Unknown Source)
@@ -133,7 +133,7 @@ Caused by: java.security.AccessControlException: access denied ("java.io.FilePer
 	... 23 more
 ============= end nested exception, level (2) ===========
 ============= begin nested exception, level (3) ===========
-ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.handleSecPrivException(Unknown Source)
 	at org.apache.derby.impl.services.monitor.StorageFactoryService$FileOperationHelper.exists(Unknown Source)
@@ -159,7 +159,7 @@ ERROR XBM0C: Falta el privilegio para la operación 'exists' en el archivo 'serv
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Caused by: java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at java.security.AccessControlContext.checkPermission(Unknown Source)
 	at java.security.AccessController.checkPermission(Unknown Source)
 	at java.lang.SecurityManager.checkPermission(Unknown Source)
@@ -168,7 +168,7 @@ Caused by: java.security.AccessControlException: access denied ("java.io.FilePer
 	... 23 more
 ============= end nested exception, level (3) ===========
 ============= begin nested exception, level (4) ===========
-java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+java.security.AccessControlException: access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")
 	at java.security.AccessControlContext.checkPermission(Unknown Source)
 	at java.security.AccessController.checkPermission(Unknown Source)
 	at java.lang.SecurityManager.checkPermission(Unknown Source)
@@ -199,5 +199,5 @@ java.security.AccessControlException: access denied ("java.io.FilePermission" "/
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
 ============= end nested exception, level (4) ===========
 Cleanup action completed
-Sun Feb 16 17:07:46 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = sample), (DRDAID = {1}), No se ha podido iniciar la base de datos 'sample' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
-Sun Feb 16 17:07:46 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = sample), (DRDAID = {1}), Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/sample/service.properties" "read")
+Sun Feb 16 19:04:05 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = assoc), (DRDAID = {1}), No se ha podido iniciar la base de datos 'assoc' con el cargador de clases sun.misc.Launcher$AppClassLoader@2e7cf883, consulte la excepción siguiente para obtener más información.
+Sun Feb 16 19:04:05 CET 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = assoc), (DRDAID = {1}), Falta el privilegio para la operación 'exists' en el archivo 'service.properties': access denied ("java.io.FilePermission" "/home/leonardo/workspaceEE/progr3/BD/db-derby-10.10.1.1-bin/bin/assoc/service.properties" "read")

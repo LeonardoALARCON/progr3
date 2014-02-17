@@ -55,13 +55,11 @@ public class Article {
 		this.stock = stock;
 	}
 	
+		
 	public String toString() {
 		return "Adherent [code=" + code + ", nom=" + nom + ", prix="
 				+ prix + ", stock=" + stock +"]";
 	}
 
-	public Article getCode(int article) {
-		return this.getCode(article);
-	}
 
 }

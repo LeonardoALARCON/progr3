@@ -144,8 +144,8 @@ public class TestProcedures {
 		ars.create(ar);
 		
 		Commande co = new Commande();
-		co.setAdherent("LeoNardo");
-		co.setArticle(ar.getCode());
+		co.setAdherent(ad1);
+		co.setArticle(ar);
 		co.setQuantite(2);
 		co.setDateCommande(new Date());
 		cs.create(co);
@@ -199,15 +199,15 @@ public class TestProcedures {
 		ars.create(ar);
 		
 		Commande co = new Commande();
-		co.setAdherent("LeoNardo");
-		co.setArticle(ar.getCode());
+		co.setAdherent(ad1);
+		co.setArticle(ar);
 		co.setQuantite(2);
 		co.setDateCommande(new Date());
 		cs.create(co);
 		
 		Commande co2 = new Commande();
-		co2.setAdherent("coq_sportif38");
-		co2.setArticle(ar.getCode());
+		co2.setAdherent(ad);
+		co2.setArticle(ar);
 		co2.setQuantite(12);
 		co2.setDateCommande(new Date());
 		cs.create(co2);
@@ -268,8 +268,8 @@ public class TestProcedures {
 		ars.create(ar);
 		
 		Commande co = new Commande();
-		co.setAdherent("LeoNardo");
-		co.setArticle(ar.getCode());
+		co.setAdherent(ad1);
+		co.setArticle(ar);
 		co.setQuantite(2);
 		co.setDateCommande(new Date());
 		cs.create(co);		

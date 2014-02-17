@@ -49,8 +49,8 @@ public class CommandeService {
 		em.getTransaction().commit();
 		//Decrementer un article
 		ArticleService ars = new ArticleService();
-		Article art = art.getCode(commande.getArticle());
-		ars.diminuerStock(art, commande.getQuantite());
+		
+		ars.diminuerStock(commande.getArticle(), commande.getQuantite());
 	}
 
 	public void update(Commande commande) {
@@ -59,8 +59,7 @@ public class CommandeService {
 		em.getTransaction().commit();
 		//mettre a jour aussi
 		ArticleService ars = new ArticleService();
-		Article art = ((Article) ars).getCode(commande.getArticle());
-		ars.diminuerStock(art, commande.getQuantite());
+		ars.diminuerStock(commande.getArticle(), commande.getQuantite());
 	}
 
 	public void closeConnection() {

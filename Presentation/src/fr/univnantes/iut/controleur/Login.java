@@ -41,8 +41,10 @@ public class Login extends HttpServlet {
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		AdherentService adSer = new AdherentService();
-		Adherent ad = adSer.find(1);
-		request.getSession().setAttribute("login", "UserTest");
+		Adherent ad = adSer.find(request.getParameter("login"));
+		if(ad != null){
+			request.getSession().setAttribute("login", ad.getId());
+		}
 		redirect(request, response);
 	}
 
