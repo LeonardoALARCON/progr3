@@ -52,7 +52,7 @@ public class NouveauAdherentControleur extends HttpServlet {
 			getServletContext().getNamedDispatcher("nouveauadherentJSP").forward(request,
 					response);
 		}
-		else if(ad.getMotPase().equals(request.getParameter("psswdConf"))){
+		else if(request.getParameter("psswd").equals(request.getParameter("psswdConf"))){
 			request.getSession().setAttribute("message", "Les mot de passe ne sont pas egals");
 			request.getSession().setAttribute("adherent", ad);
 			getServletContext().getNamedDispatcher("nouveauadherentJSP").forward(request,
