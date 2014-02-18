@@ -12,7 +12,6 @@
 	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/classmate-1.0.0.jar"/>
 	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/el-ri-1.0.jar"/>
 	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/hibernate-validator-5.0.2.Final.jar"/>
-	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/javax.el-api-2.2.4.jar"/>
 	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/jboss-logging-3.1.1.GA.jar"/>
 	<classpathentry kind="lib" path="lib/BeanValidation-1.1-JARs (1)/validation-api-1.1.0.Final.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

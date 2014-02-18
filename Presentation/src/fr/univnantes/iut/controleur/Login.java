@@ -38,21 +38,19 @@ public class Login extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	@SuppressWarnings("unused")
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		AdherentService adSer = new AdherentService();
 		Adherent ad = adSer.find(request.getParameter("login"));
-		if(ad != null){
+		if (ad != null) {
 			request.getSession().setAttribute("login", ad);
-		}
-		else{
-			request.getSession().setAttribute("message", "Login ou mot de passe incorrects.");
+		} else {
+			request.getSession().setAttribute("message",
+					"Login ou mot de passe incorrects.");
 		}
 		request.setAttribute("page", "accueil");
 		getServletContext().getNamedDispatcher("template").forward(request,
 				response);
 	}
-
 
 }

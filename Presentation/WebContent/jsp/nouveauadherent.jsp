@@ -12,7 +12,7 @@
   <h3 id="message">${sessionScope.message}</h3>
 </div>
 <div id="formulaireAuthentification" class="center">
-<form name="formRegister" method="post">
+<form id="formReg" name="formRegister" method="post">
 	<table>
 		<tr>
 			<td>Identifiant:</td>
@@ -23,13 +23,13 @@
 		<tr>
 			<td>Mot de passe:</td>
 			<td>
-			 <input type="password" name="psswd" size="20" maxlength="20" required><small>*</small>
+			 <input id="mdp" type="password" name="psswd" size="20" maxlength="20" required><small>*</small>
 			</td>
 		</tr>
 		<tr>
       <td>Mot de passe:</td>
       <td>
-       <input type="password" name="psswdConf" size="20" maxlength="20" required><small>*</small>
+       <input id="mdpConf" type="password" name="psswdConf" size="20" maxlength="20" required><small>*</small>
       </td>
     </tr>
     <tr>
@@ -74,8 +74,7 @@
       </td>
     </tr>
 		<tr>
-			<td colspan="2" align="center"><input type="submit"
-				name="envoyer" value="Enregistrer"></td>
+			<td colspan="2" align="center"><button onClick="motPasseEgals();" >Enregistrer</button></td>
 		</tr>
 		<tr>
 		  <td><small>*</small>Champs Obligatoires</td>
@@ -83,5 +82,17 @@
 	</table>
 </form>
 </div>
+<script>
+function motPasseEgals(){
+	mdp = document.getElementById("mdp");
+	mdpConf = document.getElementById("mdpConf");
+	if(mdp.value != mdpConf.value){
+		document.getElementById("message").innerText = "Les mot de passe sont differents";
+	}
+	else{
+		document.getElementById("formReg").submit();
+	}
+}
+</script>
 </body>
 </html>

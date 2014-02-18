@@ -7,6 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import fr.univnantes.iut.beans.Adherent;
 import fr.univnantes.iut.beans.Commande;
 
 public class CommandeService {
@@ -72,5 +73,10 @@ public class CommandeService {
 		return commandes;
 
 	}
+	
+	public List<Commande> commandesAdherent(int idAdh){
+		query = em.createNativeQuery("SELECT * FROM COMMANDE WHERE )
+	}
+	
 	
 }

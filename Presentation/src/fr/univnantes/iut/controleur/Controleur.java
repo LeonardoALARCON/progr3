@@ -1,7 +1,6 @@
 package fr.univnantes.iut.controleur;
 
 import java.io.IOException;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import fr.univnantes.iut.beans.Adherent;
-import fr.univnantes.iut.beans.Commande;
 import fr.univnantes.iut.service.ArticleService;
 
 /**
@@ -46,7 +44,7 @@ public class Controleur extends HttpServlet {
 
 	private void processus(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		ArticleService artServ = new ArticleService();
+		request.getSession().removeAttribute("message");
 		String dispatcher = "";
 		if ("/css/style.css".equals(request.getPathInfo())) {
 			request.getRequestDispatcher("/css/style.css").forward(request,
@@ -69,8 +67,9 @@ public class Controleur extends HttpServlet {
 				request.setAttribute("page",
 						request.getPathInfo().replace("/", ""));
 				if ("/articles".equals(request.getPathInfo())) {
-
-					request.setAttribute("articles", artServ.listAll());
+					ArticleService artServ = new ArticleService();
+					System.out.println(artServ.listAll());
+					request.getSession().setAttribute("articles", artServ.listAll());
 				} else if ("/commande".equals(request.getPathInfo())) {
 					request.getSession().setAttribute(
 							"commandes",
