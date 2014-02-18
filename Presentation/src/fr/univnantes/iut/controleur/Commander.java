@@ -31,11 +31,17 @@ public class Commander extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@SuppressWarnings("unchecked")
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Adherent user = (Adherent) request.getSession().getAttribute("login");
-		request.getSession().removeAttribute("commandes");
-		for(Commande co : commServ.listAll()){
-			commServ.delete(co);
+		if ("/annulerCommande".equals(request.getPathInfo())){ 
+			request.getSession().removeAttribute("commande");
+		}
+		else if("/validerCommande".equals(request.getPathInfo())){
+			for(Commande co : (ArrayList<Commande>)request.getSession().getAttribute("commande")){
+				commServ.create(co);
+			}
+			request.getSession().removeAttribute("commande");
 		}
 		request.setAttribute("page", "accueil");
 		getServletContext().getNamedDispatcher("template").forward(request,
@@ -55,7 +61,6 @@ public class Commander extends HttpServlet {
 		comm.setDateCommande(new Date());
 		comm.setQuantite(Integer.parseInt(request.getParameter("quantite")));
 		((ArrayList<Commande>)request.getSession().getAttribute("commande")).add(comm);
-		
 		request.setAttribute("page", "commande");
 
 		request.getSession().setAttribute("commandes", commServ.listAll());

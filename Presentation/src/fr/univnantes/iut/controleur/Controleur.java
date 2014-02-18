@@ -50,9 +50,11 @@ public class Controleur extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		request.getSession().removeAttribute("message");
 		String dispatcher = "";
+		
 		if(request.getSession().getAttribute("commande") == null){
 			request.getSession().setAttribute("commande", new ArrayList<Commande>());
 		}
+		
 		if ("/css/style.css".equals(request.getPathInfo())) {
 			request.getRequestDispatcher("/css/style.css").forward(request,
 					response);
@@ -69,23 +71,26 @@ public class Controleur extends HttpServlet {
 			dispatcher = "login";
 		} else if (request.getParameter("commander") != null) {
 			dispatcher = "commander";
-		} else if ("/annulerCommande".equals(request.getPathInfo())) {
+		} else if ("/annulerCommande".equals(request.getPathInfo()) || "/validerCommande".equals(request.getPathInfo())) {
 			dispatcher = "commander";
 		} else {
 			if (request.getPathInfo() != null) {
+				
 				request.setAttribute("page",
 						request.getPathInfo().replace("/", ""));
+				
 				if ("/articles".equals(request.getPathInfo())) {
 					ArticleService artServ = new ArticleService();
 					request.getSession().setAttribute("articles",
 							artServ.listAll());
-				} else {
-					request.setAttribute("page", "accueil");
 				}
-				dispatcher = "template";
+				
+			} else {
+				request.setAttribute("page", "accueil");
 			}
+			dispatcher = "template";
 		}
-
+		
 		getServletContext().getNamedDispatcher(dispatcher).forward(request,
 				response);
 	}

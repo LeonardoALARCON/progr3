@@ -12,7 +12,7 @@
         </tr>
     </thead>
     <tbody>
-            <c:forEach items="${sessionScope.commandes}" var="commande">
+            <c:forEach items="${sessionScope.commande}" var="commande">
           <tr>
             <td>${ commande.article.code }</td>
             <td>${ commande.article.nom }</td>
