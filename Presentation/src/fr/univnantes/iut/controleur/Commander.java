@@ -51,7 +51,9 @@ public class Commander extends HttpServlet {
 		comm.setQuantite(Integer.parseInt(request.getParameter("quantite")));
 		commServ.create(comm);
 		request.setAttribute("page", "commande");
+
 		request.getSession().setAttribute("commandes", user.getCommandes());
+		System.out.println(user.getCommandes());
 		getServletContext().getNamedDispatcher("template").forward(request,
 				response);
 	}

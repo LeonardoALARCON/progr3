@@ -68,7 +68,8 @@ public class Controleur extends HttpServlet {
 						request.getPathInfo().replace("/", ""));
 				if ("/articles".equals(request.getPathInfo())) {
 					ArticleService artServ = new ArticleService();
-					request.setAttribute("articles", artServ.listAll());
+					System.out.println(artServ.listAll());
+					request.getSession().setAttribute("articles", artServ.listAll());
 				} else if ("/commande".equals(request.getPathInfo())) {
 					request.getSession().setAttribute(
 							"commandes",
