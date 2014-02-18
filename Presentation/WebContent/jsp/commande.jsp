@@ -12,7 +12,6 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
             <c:forEach items="${sessionScope.commandes}" var="commande">
           <tr>
             <td>${ commande.article.code }</td>
@@ -22,7 +21,11 @@
             <td>${commande.quantite * commande.article.prix }</td>
           </tr>
      </c:forEach>
+        <tr>
+          <td><a href="${pageContext.servletContext.contextPath}/association/validerCommande">Valider la commande</a></td>
+          <td><a href="${pageContext.servletContext.contextPath}/association/annulerCommande">Annuler la commande</a></td>
         </tr>
+        
     </tbody>
 </table>
 <a href="${pageContext.servletContext.contextPath}/association/annulerCommande">Annuler la commande</a>

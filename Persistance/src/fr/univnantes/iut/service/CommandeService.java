@@ -75,9 +75,11 @@ public class CommandeService {
 	}
 	
 	@SuppressWarnings("unchecked")
-	public List<Commande> commandesAdherent(int idAdh){
-		query = em.createNativeQuery("SELECT * FROM COMMANDE WHERE ID_ADH = " + idAdh);
-		return (List<Commande>)query.getResultList();
+	public List<Commande> commandesAdherent(Adherent adh){
+		query = em.createNamedQuery("Commande.findByAdherent");
+		query.setParameter("adherent", adh);
+		List<Commande> commandes = query.getResultList();
+		return commandes;
 	}
 	
 	

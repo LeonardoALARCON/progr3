@@ -5,7 +5,12 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@NamedQueries({ @NamedQuery(name = "Commande.findAll", query = "SELECT c FROM Commande c") })
+@NamedQueries({
+	@NamedQuery(name = "Commande.findAll", query = "SELECT c FROM Commande c"),
+	@NamedQuery(name="Commande.findByAdherent",
+    query="SELECT c FROM Commande c " +
+          "WHERE c.adherent = :adherent")
+})
 @Table(name = "COMMANDE", schema = "ASSOC")
 public class Commande {
 	@Id

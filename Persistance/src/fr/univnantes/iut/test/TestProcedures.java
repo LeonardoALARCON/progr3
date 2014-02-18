@@ -347,4 +347,43 @@ public class TestProcedures {
 		adhServ.delete(ad1);
 
 	}
+	
+	@Test
+	public void testCommandesParAdherent() {
+		int stockInit = 50;
+		int quantite = 2;
+		
+		Adherent ad1 = new Adherent();
+		ad1.setId("LeoNardo");
+		ad1.setMotPase("chocolat");
+		ad1.setNom("Alarcon");
+		ad1.setPrenom("leo");
+		ad1.setAdresse("iut joffre");
+		ad1.setCodePostal("44000");
+		ad1.setVille("NANTES");
+		ad1.setPays("FRANCE");
+		adhServ.create(ad1);
+
+		Article ar = new Article();
+		ar.setNom("Crayon");
+		ar.setPrix(1.50);
+		ar.setStock(stockInit);
+		arServ.create(ar);
+
+		Commande co = new Commande();
+		co.setAdherent(ad1);
+		co.setArticle(ar);
+		co.setQuantite(quantite);
+		co.setDateCommande(new Date());
+		comServ.create(co);
+		List<Commande>commandes = comServ.commandesAdherent(ad1);
+		System.out.println("testCommandesParAdherent==============\n" +
+				commandes);
+		assertFalse(commandes.isEmpty());
+		
+		comServ.delete(co);
+		arServ.delete(ar);
+		adhServ.delete(ad1);
+
+	}
 }

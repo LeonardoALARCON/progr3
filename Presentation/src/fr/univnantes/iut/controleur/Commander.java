@@ -1,6 +1,7 @@
 package fr.univnantes.iut.controleur;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Date;
 
 import javax.servlet.ServletException;
@@ -44,6 +45,7 @@ public class Commander extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@SuppressWarnings("unchecked")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Commande comm = new Commande();
 		Adherent user = (Adherent) request.getSession().getAttribute("login");
@@ -52,7 +54,8 @@ public class Commander extends HttpServlet {
 		comm.setArticle(artServ.find(Integer.parseInt(request.getParameter("codeArticle"))));
 		comm.setDateCommande(new Date());
 		comm.setQuantite(Integer.parseInt(request.getParameter("quantite")));
-		commServ.create(comm);
+		((ArrayList<Commande>)request.getSession().getAttribute("commande")).add(comm);
+		
 		request.setAttribute("page", "commande");
 
 		request.getSession().setAttribute("commandes", commServ.listAll());

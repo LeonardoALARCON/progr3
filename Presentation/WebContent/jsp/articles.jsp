@@ -7,7 +7,7 @@
 			<th>Code</th>
 			<th>Nom</th>
 			<th>Prix</th>
-			<th>Stoque</th>
+			<th>Stock</th>
 			<th>Commander</th>
 		</tr>
 	</thead>

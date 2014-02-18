@@ -1,5 +1,6 @@
 package fr.univnantes.iut.controleur;
 
+import java.util.ArrayList;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import fr.univnantes.iut.beans.Adherent;
+import fr.univnantes.iut.beans.Commande;
 import fr.univnantes.iut.service.ArticleService;
 import fr.univnantes.iut.service.CommandeService;
 
@@ -22,6 +24,7 @@ public class Controleur extends HttpServlet {
 	 */
 	public Controleur() {
 		super();
+		
 		// TODO Auto-generated constructor stub
 	}
 
@@ -47,6 +50,9 @@ public class Controleur extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		request.getSession().removeAttribute("message");
 		String dispatcher = "";
+		if(request.getSession().getAttribute("commande") == null){
+			request.getSession().setAttribute("commande", new ArrayList<Commande>());
+		}
 		if ("/css/style.css".equals(request.getPathInfo())) {
 			request.getRequestDispatcher("/css/style.css").forward(request,
 					response);
@@ -71,13 +77,8 @@ public class Controleur extends HttpServlet {
 						request.getPathInfo().replace("/", ""));
 				if ("/articles".equals(request.getPathInfo())) {
 					ArticleService artServ = new ArticleService();
-					System.out.println(artServ.listAll());
 					request.getSession().setAttribute("articles",
 							artServ.listAll());
-				} else if ("/commande".equals(request.getPathInfo())) {
-					CommandeService commServ = new CommandeService();
-					request.getSession().setAttribute("commandes",
-							commServ.listAll());
 				} else {
 					request.setAttribute("page", "accueil");
 				}
