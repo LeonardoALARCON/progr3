@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import fr.univnantes.iut.beans.Adherent;
 import fr.univnantes.iut.service.ArticleService;
+import fr.univnantes.iut.service.CommandeService;
 
 /**
  * Servlet implementation class Controleur
@@ -62,6 +63,8 @@ public class Controleur extends HttpServlet {
 			dispatcher = "login";
 		} else if (request.getParameter("commander") != null) {
 			dispatcher = "commander";
+		} else if ("/annulerCommande".equals(request.getPathInfo())) {
+			dispatcher = "commander";
 		} else {
 			if (request.getPathInfo() != null) {
 				request.setAttribute("page",
@@ -69,20 +72,17 @@ public class Controleur extends HttpServlet {
 				if ("/articles".equals(request.getPathInfo())) {
 					ArticleService artServ = new ArticleService();
 					System.out.println(artServ.listAll());
-					request.getSession().setAttribute("articles", artServ.listAll());
+					request.getSession().setAttribute("articles",
+							artServ.listAll());
 				} else if ("/commande".equals(request.getPathInfo())) {
-					request.getSession().setAttribute(
-							"commandes",
-							((Adherent) request.getSession().getAttribute(
-									"login")).getCommandes());
-				} else if  ("/annulerCommande".equals(request.getPathInfo())) {
-					dispatcher = "commander";
+					CommandeService commServ = new CommandeService();
+					request.getSession().setAttribute("commandes",
+							commServ.listAll());
+				} else {
+					request.setAttribute("page", "accueil");
 				}
-
-			} else {
-				request.setAttribute("page", "accueil");
+				dispatcher = "template";
 			}
-			dispatcher = "template";
 		}
 
 		getServletContext().getNamedDispatcher(dispatcher).forward(request,

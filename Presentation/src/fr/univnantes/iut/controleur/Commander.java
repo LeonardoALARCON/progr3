@@ -33,9 +33,12 @@ public class Commander extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Adherent user = (Adherent) request.getSession().getAttribute("login");
 		request.getSession().removeAttribute("commandes");
-		for(Commande co : user.getCommandes()){
+		for(Commande co : commServ.listAll()){
 			commServ.delete(co);
 		}
+		request.setAttribute("page", "accueil");
+		getServletContext().getNamedDispatcher("template").forward(request,
+				response);
 	}
 
 	/**
@@ -52,8 +55,8 @@ public class Commander extends HttpServlet {
 		commServ.create(comm);
 		request.setAttribute("page", "commande");
 
-		request.getSession().setAttribute("commandes", user.getCommandes());
-		System.out.println(user.getCommandes());
+		request.getSession().setAttribute("commandes", commServ.listAll());
+		System.out.println( commServ.listAll());
 		getServletContext().getNamedDispatcher("template").forward(request,
 				response);
 	}
